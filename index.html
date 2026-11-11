@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology Education Glossary — Cross-Discipline</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f8f7f4;
+    --surface: #ffffff;
+    --border: #e4e1d8;
+    --border-light: #ede9df;
+    --text-primary: #1a1814;
+    --text-secondary: #4a4640;
+    --text-muted: #8a867e;
+    --accent: #2d5a3d;
+    --accent-light: #eaf3de;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  /* HEADER */
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 2rem 2rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+  }
+
+  .header-top {
+    max-width: 1100px;
+    margin: 0 auto 1.25rem;
+  }
+
+  .header-top h1 {
+    font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+  }
+
+  .header-top p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.01em;
+  }
+
+  .header-controls {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* LEVEL TOGGLE */
+  .level-toggle {
+    display: flex;
+    gap: 6px;
+  }
+
+  .level-btn {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 7px 18px;
+    border-radius: 30px;
+    border: 1.5px solid var(--border);
+    cursor: pointer;
+    background: var(--surface);
+    color: var(--text-secondary);
+    transition: all 0.15s;
+    letter-spacing: 0.01em;
+  }
+
+  .level-btn.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  .level-btn:hover:not(.active) {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* SEARCH + FILTERS */
+  .search-filter-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .search-wrap {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+    font-size: 0.85rem;
+  }
+
+  #searchInput {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82rem;
+    width: 100%;
+    padding: 8px 12px 8px 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg);
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  #searchInput:focus { border-color: var(--accent); }
+  #searchInput::placeholder { color: var(--text-muted); }
+
+  .filter-pills {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 5px 11px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    background: var(--surface);
+    color: var(--text-secondary);
+    transition: all 0.12s;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  .pill:hover { border-color: var(--text-secondary); }
+  .pill.active { font-weight: 600; }
+
+  .pill-all.active { background: var(--text-primary); color: #fff; border-color: var(--text-primary); }
+  .pill-food.active { background: #3B6D11; color: #fff; border-color: #3B6D11; }
+  .pill-textiles.active { background: #993556; color: #fff; border-color: #993556; }
+  .pill-hard.active { background: #854F0B; color: #fff; border-color: #854F0B; }
+  .pill-design.active { background: #534AB7; color: #fff; border-color: #534AB7; }
+  .pill-digital.active { background: #185FA5; color: #fff; border-color: #185FA5; }
+
+  /* ALPHA BAR */
+  .alpha-row {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+  }
+
+  .alpha-btn {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 3px 7px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-light);
+    cursor: pointer;
+    background: transparent;
+    color: var(--text-muted);
+    transition: all 0.12s;
+  }
+
+  .alpha-btn:hover { border-color: var(--text-secondary); color: var(--text-secondary); }
+  .alpha-btn.active { background: var(--surface); border-color: var(--border); color: var(--text-primary); font-weight: 600; box-shadow: var(--shadow); }
+
+  /* MAIN */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 3rem;
+  }
+
+  .count-label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  /* TERM CARDS */
+  .term-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
+  }
+
+  .term-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .def-text {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .examples-label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 7px;
+  }
+
+  .ex-chip {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    padding: 9px 11px;
+    border-radius: var(--radius-md);
+    border: 1px solid;
+    line-height: 1.5;
+  }
+
+  .ex-chip .area {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .ex-chip ul {
+    margin: 0;
+    padding: 0 0 0 14px;
+    list-style: disc;
+  }
+
+  .ex-chip ul li {
+    margin-bottom: 3px;
+  }
+
+  .ex-food { background: #EAF3DE; border-color: #97C459; color: #1f4008; }
+  .ex-food .area { color: #2d5a12; }
+  .ex-textiles { background: #FBEAF0; border-color: #ED93B1; color: #3d0f1e; }
+  .ex-textiles .area { color: #7a2645; }
+  .ex-hard { background: #FAEEDA; border-color: #EF9F27; color: #321b01; }
+  .ex-hard .area { color: #6b3d08; }
+  .ex-design { background: #EEEDFE; border-color: #AFA9EC; color: #1e1848; }
+  .ex-design .area { color: #433ca0; }
+  .ex-digital { background: #E6F1FB; border-color: #85B7EB; color: #031d36; }
+  .ex-digital .area { color: #124b87; }
+
+  .no-results {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: 600px) {
+    .site-header { padding: 1.25rem 1rem 1rem; }
+    main { padding: 1rem 1rem 2rem; }
+    .examples-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <h1>Technology Education Glossary</h1>
+    <p>Food · Textiles · Hard Materials · Design &amp; Visual Communication · Digital Technology</p>
+  </div>
+  <div class="header-controls">
+    <div class="level-toggle">
+      <button class="level-btn active" onclick="setLevel('junior',this)">Years 9–10 (Juniors)</button>
+      <button class="level-btn" onclick="setLevel('senior',this)">Years 11–13 (Seniors)</button>
+    </div>
+    <div class="search-filter-row">
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="search" id="searchInput" placeholder="Search terms or definitions…" oninput="render()" />
+      </div>
+      <div class="filter-pills" id="filterRow"></div>
+    </div>
+    <div class="alpha-row" id="alphaBar"></div>
+  </div>
+</header>
+
+<main>
+  <div class="count-label" id="countLabel"></div>
+  <div id="termList"></div>
+</main>
+
+<footer>
+  Technology Education Glossary &mdash; Cross-discipline examples for Years 9–13 &mdash; Based on NZ Technology Curriculum terminology
+</footer>
+
+<script>
+const AREAS=[
+  {key:'food',label:'Food',pillCls:'pill-food',chipCls:'ex-food'},
+  {key:'textiles',label:'Textiles',pillCls:'pill-textiles',chipCls:'ex-textiles'},
+  {key:'hard',label:'Hard materials',pillCls:'pill-hard',chipCls:'ex-hard'},
+  {key:'design',label:'Design & visual comm.',pillCls:'pill-design',chipCls:'ex-design'},
+  {key:'digital',label:'Digital technology',pillCls:'pill-digital',chipCls:'ex-digital'},
+];
+
+const TERMS=[
+  {
+    term:'Attribute',
+    def:{
+      junior:'What an outcome does (functional) or how it looks and feels (physical). For example: "provides grip" is functional; "smooth and red" is physical.',
+      senior:'The functional and physical nature of a technological outcome. Functional attributes describe operational behaviour; physical attributes describe spatial or sensory properties. Attributes are qualitative — specifications make them measurable.'
+    },
+    examples:{
+      food:{
+        junior:['A muesli bar provides energy (functional) and is chewy and sweet (physical).'],
+        senior:['Functional: delivers 200 kJ per 30 g serve and resists crumbling during transport.','Physical: golden-brown colour, chewy texture, mild honey aroma rated positive by 80% of the target panel.']
+      },
+      textiles:{
+        junior:['A raincoat keeps you dry (functional) and is bright yellow so you can be seen (physical).'],
+        senior:['Functional: repels moisture at a hydrostatic head of ≥1500 mm (ISO 811).','Physical: lightweight matte finish, rated "comfortable against skin" by 8/10 wear-test participants.']
+      },
+      hard:{
+        junior:['A phone stand holds your phone at an angle so you can watch videos (functional) and looks sleek on a desk (physical).'],
+        senior:['Functional: supports devices 8–12 mm thick at 65° without slipping under 300 g load.','Physical: natural timber grain finish, rated "visually appealing in a home office" by target users.']
+      },
+      design:{
+        junior:['A logo tells people what a business is called (functional) and uses bold colours to stand out (physical).'],
+        senior:['Functional: identifies the brand at 16 px screen size and in single-colour print.','Physical: high-contrast geometric form rated "modern and trustworthy" in stakeholder evaluation.']
+      },
+      digital:{
+        junior:['A weather app tells you if it will rain (functional) and has big easy-to-read icons (physical).'],
+        senior:['Functional: retrieves and displays forecast data within 1.5 s on a 4G connection.','Physical: dark-mode interface with rounded card components rated "calm and readable" by users.']
+      }
+    }
+  },
+  {
+    term:'Brief',
+    def:{
+      junior:'A description of what you are going to make and why. An initial brief starts the project; a final brief includes all the measurements and requirements the outcome must meet.',
+      senior:'A description of a desired outcome that would meet a need or realise an opportunity. The initial brief includes a conceptual statement and potential attributes; the final brief includes developed specifications and serves as the evaluation tool.'
+    },
+    examples:{
+      food:{
+        junior:['Make a nut-free snack for Year 7 students that needs no fridge and can be eaten quickly at interval.'],
+        senior:['Initial: "Develop a shelf-stable snack for Year 7 students with nut allergies, suitable for interval consumption."','Final: includes specifications — ≤8 g sugar/30 g serve, nut-free facility production, 14-day shelf life at 20 °C, cost ≤$1.20/unit.']
+      },
+      textiles:{
+        junior:['Design a reusable shopping bag that folds small and can carry heavy groceries.'],
+        senior:['Initial: "Produce a reusable carry bag for weekly grocery shopping that replaces single-use plastic."','Final: GOTS-certified organic cotton, ≥8 kg load capacity without seam failure, folds to A5, machine-washable at 40 °C.']
+      },
+      hard:{
+        junior:['Build a phone stand from wood that holds your phone at a good viewing angle and goes flat for easy transport.'],
+        senior:['Initial: "Design a portable desktop phone stand for students using devices during class."','Final: 3 mm laser-cut plywood, no-adhesive assembly, fits devices 8–12 mm thick, ships flat in C5 envelope.']
+      },
+      design:{
+        junior:['Create a poster for the school sustainability campaign that can be printed and put up around school.'],
+        senior:['Initial: "Develop a poster series to promote the school sustainability campaign."','Final: two spot colours only, legible at 3 m, A2 format, supplied as print-ready PDF/X-1a with 3 mm bleed.']
+      },
+      digital:{
+        junior:['Build an app that lets people in the community garden record what they have grown.'],
+        senior:['Initial: "Develop a web app for community garden members to log harvest data."','Final: mobile-responsive, offline capability via service worker, WCAG 2.1 AA, data export as CSV.']
+      }
+    }
+  },
+  {
+    term:'Conceptual design',
+    def:{
+      junior:'A drawing, model, or written description that shows what your outcome will look like and how it will work — before you make the real thing.',
+      senior:'A description of a proposed technological outcome using media such as scaled plans or drawings, scale models, computer simulations, written descriptions, and component lists. Communicates design intent clearly enough for evaluation and feedback.'
+    },
+    examples:{
+      food:{
+        junior:['A labelled sketch of a smoothie bowl showing which ingredients go in each layer and roughly how big it will be.'],
+        senior:['Annotated concept sheet: scaled portion diagram, ingredient zones with gram weights, colour palette sourced from natural ingredients, and packaging footprint sketch.']
+      },
+      textiles:{
+        junior:['A drawing of the front and back of a jacket, with labels showing the pockets, zip, and fabric colours.'],
+        senior:['Technical flats with annotated panel attachment points, fabric weight callouts (g/m²), stitch type specifications, and three colourway options presented as scaled CAD drawings.']
+      },
+      hard:{
+        junior:['A labelled sketch of a stool showing the seat size, leg angles, and how the pieces slot together.'],
+        senior:['Exploded-view CAD render with material callouts, joint tolerances (±0.2 mm), assembly sequence, and bill of materials including hardware specifications.']
+      },
+      design:{
+        junior:['A rough layout showing where the headline, photo, and logo will go on the poster, with colour swatches.'],
+        senior:['Grid-based wireframe at 1:2 scale: image-to-text ratio, typographic hierarchy with specified typefaces and point sizes, proposed colour system with hex codes, and annotation of visual hierarchy logic.']
+      },
+      digital:{
+        junior:['A set of paper screens showing what each page of the app looks like and arrows showing how you move between them.'],
+        senior:['Clickable Figma prototype with annotated screen flows, interaction states for all primary tasks, component inventory, and light/dark mode variants for key screens.']
+      }
+    }
+  },
+  {
+    term:'Conceptual statement',
+    def:{
+      junior:'A sentence or two in your brief that explains what you are making and why you are making it.',
+      senior:'The part of a brief that communicates the purpose of the technological practice — what is to be done, for whom, and why. Frames the need or opportunity and provides direction for all subsequent development.'
+    },
+    examples:{
+      food:{
+        junior:['"We are making a plant-based dip for the school canteen because students want a healthier snack option."'],
+        senior:['"We are developing a plant-based dip for the school canteen because current options do not meet the dietary preferences of students who avoid animal products, and canteen sales data shows demand for affordable, nutritious alternatives."']
+      },
+      textiles:{
+        junior:['"We are redesigning the school sports uniform because students get too hot during summer sport."'],
+        senior:['"We are redesigning the Year 9–10 sports uniform because student and teacher feedback identifies thermal discomfort and inadequate moisture management as barriers to participation in summer physical education."']
+      },
+      hard:{
+        junior:['"We are making a seed-starter kit because the community garden does not have enough space to store seedlings."'],
+        senior:['"We are developing a portable, flat-pack seed-starter kit because community garden members lack home storage and the current shared propagation area is over-subscribed from August to November."']
+      },
+      design:{
+        junior:['"We are making new signs for the library because visitors who do not speak English cannot find their way around."'],
+        senior:['"We are developing a bilingual wayfinding system for the central library because current signage relies solely on English text, creating barriers for the library\'s growing non-English-speaking user base."']
+      },
+      digital:{
+        junior:['"We are building a homework reminder app because students often forget when assignments are due."'],
+        senior:['"We are developing a homework-reminder chatbot because student survey data shows 62% of missed deadlines result from assignment details being buried in long-form emails rather than accessed through a dedicated tool."']
+      }
+    }
+  },
+  {
+    term:'Context',
+    def:{
+      junior:'The setting or situation your technological outcome is part of — including who will use it, where, and why it matters.',
+      senior:'The wider physical and social environment of a technological development. Contexts should involve the transformation of energy, information, and/or materials for the purposes of manipulation, storage, transport, and/or control.'
+    },
+    examples:{
+      food:{
+        junior:['Context: school canteen. The focus is giving students healthier choices at lunchtime.'],
+        senior:['Context: improving nutritional equity in decile 1–3 school canteens.','Focus: manipulation and storage of materials to reduce food waste and meet MoH nutrition guidelines within a ≤$2.50 unit cost constraint.']
+      },
+      textiles:{
+        junior:['Context: school sport. The focus is making a uniform that keeps students cooler in summer.'],
+        senior:['Context: sustainable fashion production for teenage consumers.','Focus: transformation of materials through certified natural dyeing and zero-waste pattern cutting to reduce textile waste.']
+      },
+      hard:{
+        junior:['Context: the local playground. The focus is making equipment that all children, including those with disabilities, can use.'],
+        senior:['Context: inclusive public play spaces.','Focus: manipulation and transport of materials to produce equipment meeting AS/NZS 4422 and universal design principles.']
+      },
+      design:{
+        junior:['Context: rebranding the school library. The focus is making signs and materials that look modern and welcoming.'],
+        senior:['Context: community library rebranding.','Focus: storage and control of information to establish a consistent visual identity across physical signage, print collateral, and digital touchpoints.']
+      },
+      digital:{
+        junior:['Context: student wellbeing at secondary school. The focus is building a safe app where students can support each other.'],
+        senior:['Context: adolescent mental health support.','Focus: control and storage of information in a POPIA-compliant, anonymised peer-support platform meeting the Privacy Act 2020 requirements.']
+      }
+    }
+  },
+  {
+    term:'Critical evaluation',
+    def:{
+      junior:'Looking carefully at your outcome and deciding honestly whether it works well, meets the brief, and could be improved. You use tests, feedback, and your own observations.',
+      senior:'The objective analysis and evaluation of an issue or opportunity in order to form a reasoned judgement. Draws on evidence from testing, stakeholder feedback, and comparison against specifications. Always references brief criteria explicitly.'
+    },
+    examples:{
+      food:{
+        junior:['Tools used: sensory evaluation form, taste-test panel (classmates), ruler for portion size.','Taste-test your biscuit with a small group, check it meets the nut-free rule, and record whether the texture and flavour match the brief.'],
+        senior:['Tools used: sensory evaluation scoresheet (5-point Likert scale for texture/sweetness/overall), water activity (aW) meter, nutritional analysis software (e.g. FoodWorks), cost spreadsheet.','Compare sensory scores across three recipe iterations against specification criteria (texture, ≤8 g sugar/serve).','Use aW data to confirm shelf-life compliance before selecting the final formula.']
+      },
+      textiles:{
+        junior:['Tools used: washing machine (for wash testing), colour swatch card, ruler, seam ripper to check stitch strength.','Wash your fabric sample three times, compare colour before and after using a swatch card, and pull the seam to check it holds.'],
+        senior:['Tools used: Martindale pilling tester (ISO 12945-2), laundrometer (ISO 105-C06 colourfastness), tension gauge, dimensional measurement template.','Record pilling grade, colourfastness rating, and dimensional change after laundering.','Compare all results against brief specifications and document with annotated photographs.']
+      },
+      hard:{
+        junior:['Tools used: set of calibration weights, ruler, sandpaper samples, peer feedback form.','Hang increasing weights from your bracket and record at what point it bends or fails.','Compare the result against the load requirement in your brief.'],
+        senior:['Tools used: digital force gauge, vernier callipers, belt sander, destructive testing jig, spreadsheet for load–deflection data.','Apply incremental loads (0.5 kg intervals) to each prototype bracket, recording deflection and failure point.','Compare results across three iterations and form a justified recommendation supported by stress-analysis sketches.']
+      },
+      design:{
+        junior:['Tools used: printed greyscale test (printer), colour contrast checker (e.g. WebAIM online tool), ruler for distance legibility test.','Print your logo in black and white to check it still reads clearly.','Pin the poster at 3 m and ask classmates if they can read the headline without moving closer.'],
+        senior:['Tools used: WebAIM Contrast Checker (WCAG 2.1 AA), Adobe Colour accessibility tool, Figma for pixel-size simulation, semantic differential rating scale, structured peer evaluation rubric.','Measure contrast ratio (must be ≥4.5:1 at 16 px on white).','Simulate logo at 16 px and 32 px in Figma to evaluate legibility at screen size.','Run a 5-participant first-impression rating using a semantic differential scale and compare results against brief criteria.']
+      },
+      digital:{
+        junior:['Tools used: paper observation sheet, stopwatch, screen recording app (e.g. Loom), tally sheet for errors.','Watch someone use your app for the first time and write down every time they get confused or tap the wrong thing.','Time how long it takes them to complete the main task.'],
+        senior:['Tools used: Maze or Lookback for remote usability testing, Lighthouse (Chrome DevTools) for performance audit, axe DevTools for accessibility audit, SUS (System Usability Scale) questionnaire, task log spreadsheet.','Run Lighthouse audit — check performance score ≥90 and FCP ≤1.8 s.','Run axe accessibility audit — zero critical violations required for WCAG 2.1 AA.','Analyse moderated session logs (n=5) for task-completion rate, error patterns, and SUS score, then form prioritised recommendations.']
+      }
+    }
+  },
+  {
+    term:'Design ideas',
+    def:{
+      junior:'Different possible solutions you come up with during your project — inspired by research, looking at existing products, and your own experiences.',
+      senior:'Ideas inspired by research, past practices, and life experiences that have the potential to contribute to a design meeting the specifications of the brief. Should be diverse enough to explore the design space before converging on a solution.'
+    },
+    examples:{
+      food:{
+        junior:['Three sketches of different protein bar shapes and flavour combinations, with notes on which ingredients you could use.'],
+        senior:['Annotated concept generation: five flavour/format combinations derived from supermarket benchmarking and dietary research, each evaluated against brief specifications (cost, nutrition, allergen status) before selection.']
+      },
+      textiles:{
+        junior:['A mood board of different raincoat designs from shops, plus your own sketches of what yours could look like.'],
+        senior:['Divergent ideation combining biomimicry research (lotus-effect hydrophobicity), historical oilskin references, and contemporary technical outerwear benchmarking, annotated with material suitability notes and sustainability trade-offs.']
+      },
+      hard:{
+        junior:['Five quick sketches of different ways the pieces of your phone stand could join together without glue.'],
+        senior:['Thumbnail studies of five joinery solutions (mortise-and-tenon, finger joint, knock-down connector, press-fit slot, wedge) with annotated trade-offs for strength, assembly complexity, and flat-pack compatibility.']
+      },
+      design:{
+        junior:['Three rough poster layouts showing different ways to arrange the heading, photo, and logo, with different colour choices.'],
+        senior:['Divergent layout explorations across three grid systems, two type-scale relationships, and four colour-palette options, annotated with rationale for how each addresses the brief\'s legibility and two-colour constraints.']
+      },
+      digital:{
+        junior:['Four paper sketches of different ways the home screen of the app could look, each putting different features first.'],
+        senior:['Four onboarding-flow variations mapped to distinct user goals identified in research (quick log, record detail, browse history, share data), each annotated with interaction logic and potential usability trade-offs.']
+      }
+    }
+  },
+  {
+    term:'Drawing conventions',
+    def:{
+      junior:'The standard rules for making technical drawings — including line types, labels, scale, and how to show a 3D object in 2D.',
+      senior:'The range of accepted practices (line types, projection methods, dimensions, scale) associated with formal working drawings. Must be appropriate to the drawing type, correctly applied, and reference relevant standards.'
+    },
+    examples:{
+      food:{
+        junior:['A scaled floor plan of the school kitchen with labels showing where each piece of equipment goes and how people will move around safely.'],
+        senior:['Architectural floor plan at 1:50 using standard line weights: continuous thick for walls, continuous thin for equipment, dashed for workflow paths, with dimensions, north point, and hazard zone annotation per AS/NZS 4674.']
+      },
+      textiles:{
+        junior:['A flat drawing of the front and back of your garment, with arrows showing which way the fabric grain runs and where the seam allowances are.'],
+        senior:['Technical flat at 1:5 using standard fashion illustration conventions: continuous line for outer edges, dashed for internal seams, grain-line arrows, balance notches, seam allowance dimension (10 mm), and fabric callout annotations.']
+      },
+      hard:{
+        junior:['A drawing showing the front, side, and top view of your object, with measurements, so someone else could build it from your drawing.'],
+        senior:['Third-angle orthographic projection (ISO standard) with centre lines (chain), hidden detail lines (dashed), dimension lines with arrowheads, tolerances (±0.5 mm), surface finish symbols, and title block per AS 1100.']
+      },
+      design:{
+        junior:['A layout sketch on grid paper showing where the columns, images, and text go, with notes on font sizes.'],
+        senior:['Grid-based layout comp on a 12-column, 8 mm baseline grid: column guides, margin annotations, typeface/size/leading notation, colour references as Pantone and CMYK values, and bleed/trim marks.']
+      },
+      digital:{
+        junior:['A wireframe sketch showing each screen of the app with labels explaining what each button does.'],
+        senior:['UX wireframe at 1:1 using standard notation: solid box for static content, dashed border for dynamic content, red annotation for interaction states, numbered call-outs keyed to a separate annotation table.']
+      }
+    }
+  },
+  {
+    term:'Fit(ness) for purpose',
+    def:{
+      junior:'Whether your outcome does the job it was designed to do — as described in your brief. It links directly to your specifications (what it must measure up to) and the original need (who it was designed for). In its broadest sense, fitness for purpose also asks: were the right processes used to make it? This includes checking whether resources were used sustainably, whether the people involved were treated fairly, whether testing was done ethically, and whether the outcome can be responsibly disposed of at the end of its life.',
+      senior:'The ability of a technological outcome to serve its intended purpose within its intended context, as defined by the brief. Fitness for purpose is demonstrated by evaluating the outcome against each specification and confirming the original need is met. In its broadest sense, the concept extends beyond the outcome itself to include the fitness of the practices used in its development — encompassing the sustainability of resources, ethical testing and trialling procedures, cultural appropriateness, treatment of people involved in manufacture, lifecycle analysis, and ultimate disposal. This broader framing locates fitness for purpose within the philosophical understanding of the Nature of Technology: the performance of an outcome is only one factor in a positive fitness-for-purpose judgement.'
+    },
+    examples:{
+      food:{
+        junior:['Need: students with nut allergies need a safe, affordable canteen snack.','Specification: nut-free production facility, no fridge required, costs under $1.20, fresh for 2 weeks.','Fit for purpose (outcome): the bar passes all four specification checks AND the target group actually chooses to eat it.','Fit for purpose (broader — practice): ingredients were sourced ethically; taste-testing used informed consent; packaging is compostable; no food waste was sent to landfill during development.'],
+        senior:['Need: students with coeliac disease require a canteen option produced in a certified gluten-free facility within the existing price range.','Specifications: ≤8 g sugar/30 g serve; nut-free certified facility; aW ≤0.85 (14-day ambient shelf life); cost ≤$1.20/unit at pilot scale.','Fit for purpose (outcome): all four specifications are met AND ≥70% consumption rate is achieved in the target group trial.','Fit for purpose (broader — practice): supply chain audited for fair labour conditions; trialling conducted with culturally appropriate consent processes; packaging lifecycle assessed for end-of-disposal pathway; development food waste composted.']
+      },
+      textiles:{
+        junior:['Need: students need a uniform that keeps them cool during summer sport.','Specification: fabric must wick sweat, not go see-through when wet, and survive the school wash cycle.','Fit for purpose (outcome): all three specification checks are passed AND wear-test students report feeling cooler than in the old uniform.','Fit for purpose (broader — practice): fabric was ethically sourced; student wear-testers gave informed consent; old uniform offcuts were recycled rather than landfilled.'],
+        senior:['Need: hospital patients require garments allowing clinical access that can be laundered at 90 °C without deteriorating.','Specifications: MVTR ≥5000 g/m²/24hr; opacity ≥90% when wet; dimensional stability ≤2% after 50 washes at 90 °C; fastens one-handed.','Fit for purpose (outcome): all four specifications are verified AND patients report the garment maintains their dignity.','Fit for purpose (broader — practice): garment trialling followed hospital ethics protocols; fabric certified under OEKO-TEX Standard 100 (no harmful substances); end-of-life pathway identified (textile recycling programme); garment workers in supply chain paid living wage (verified via audit).']
+      },
+      hard:{
+        junior:['Need: elderly people need a grab bar that is easy to install and strong enough to hold their weight safely.','Specification: must hold 150 kg, install without drilling tiles, and pass basic safety checks.','Fit for purpose (outcome): load test is passed AND an elderly person can install it themselves without help.','Fit for purpose (broader — practice): testing involved older adult participants who gave informed consent; materials are corrosion-resistant and recyclable at end of life; no hazardous finishes were used.'],
+        senior:['Need: elderly residents require grab rails that can be surface-mounted without tile penetration and support 150 kg lateral static load.','Specifications: lateral static load ≥150 kg (AS 1428.1); no tile drilling required; tool-free installation in ≤15 min; corrosion-resistant finish.','Fit for purpose (outcome): all four specifications are met AND an older adult installs the rail unassisted in a timed trial.','Fit for purpose (broader — practice): trialling conducted with occupational therapist oversight and full participant consent; stainless steel specified for longevity and recyclability; adhesive system assessed for VOC emissions and safe removal; supply chain checked for fair labour practices.']
+      },
+      design:{
+        junior:['Need: new immigrants need signs they can understand without reading English.','Specification: must use icons and visuals, be readable at 5 m, and pass a colour contrast check.','Fit for purpose (outcome): all three specification checks are passed AND non-English-speaking users navigate correctly in a wayfinding test.','Fit for purpose (broader — practice): testing involved diverse language groups with informed consent; symbols were reviewed for cultural appropriateness; print materials used recycled stock and soy-based inks.'],
+        senior:['Need: non-English-speaking transit users require wayfinding signage communicating route information independent of any single language.','Specifications: contrast ratio ≥4.5:1 (WCAG AA); legible at 5 m under standard lux; uses ISO 7010 symbols; ≥90% correct navigation by unfamiliar users in testing.','Fit for purpose (outcome): all four specifications are verified AND non-English-speaking participants navigate correctly without assistance.','Fit for purpose (broader — practice): user testing included culturally diverse participants recruited through community organisations; symbols reviewed by a cross-cultural design consultant; print production specified on FSC-certified stock; digital version optimised to reduce energy per page load.']
+      },
+      digital:{
+        junior:['Need: visually impaired users need a checkout that works with a screen reader.','Specification: must load in under 2 seconds, work on iPhone and Android, and pass a basic accessibility check.','Fit for purpose (outcome): all three specification checks are passed AND a screen-reader user completes a purchase without help.','Fit for purpose (broader — practice): usability testing involved participants with lived experience of visual impairment; user data was handled in line with the Privacy Act; the app is hosted on a renewable-energy server.'],
+        senior:['Need: visually impaired users require an e-commerce checkout fully operable via screen reader and keyboard-only navigation.','Specifications: FCP ≤1.8 s on 4G; iOS 15+ and Android 11+ compatible; WCAG 2.1 Level AA (zero critical axe violations); ≥90% task completion by first-time users in ≤3 min.','Fit for purpose (outcome): all four specifications are met AND a screen-reader user completes the full checkout path unassisted.','Fit for purpose (broader — practice): testing recruited participants with visual impairments via a disability advocacy organisation under full ethical consent; personal data anonymised and deleted post-trial (Privacy Act 2020); hosting specified on renewable-energy infrastructure; software dependencies audited for open-source licence compliance; product carbon footprint documented.']
+      }
+    }
+  },
+  {
+    term:'Functional modelling',
+    def:{
+      junior:'Making a rough version of your design to test whether your ideas will work, before committing to the final materials and method.',
+      senior:'A component of technological modelling that tests the suitability of design concepts for yet-to-be-realised outcomes. Evidence from functional modelling can establish a defensible case for further development.'
+    },
+    examples:{
+      food:{
+        junior:['Making three small test batches of your biscuit with different amounts of butter to find out which one is the crispest.'],
+        senior:['Systematic test-bake matrix: three fat-content variables (10%, 15%, 20% w/w) × two baking temperatures (170 °C, 185 °C), with sensory panel scoring and aW measurement to inform formula selection.']
+      },
+      textiles:{
+        junior:['Sewing a practice version of your jacket in cheap calico to check the fit before cutting into your good fabric.'],
+        senior:['Half-scale toile in calico (equivalent drape to final fabric) to evaluate shoulder pitch, side seam curvature, and ease allowance; documented with annotated photographs and measurement comparisons against body form.']
+      },
+      hard:{
+        junior:['Laser-cutting your phone stand design in cheap MDF in three different thicknesses to see which feels most solid.'],
+        senior:['MDF test cuts at 3 mm, 4 mm, and 6 mm to compare structural rigidity under 300 g lateral load, joint fit tolerance, and aesthetic proportion; results tabulated to inform final material specification.']
+      },
+      design:{
+        junior:['Printing your poster design small and pinning it on the wall at the end of the room to check if the text is big enough to read.'],
+        senior:['A3 greyscale proof pinned at 3 m and 5 m to evaluate type legibility under ambient light; followed by a 4-participant first-impression test using a 5-point Likert scale for hierarchy clarity.']
+      },
+      digital:{
+        junior:['Showing your paper sketches of the app screens to five classmates and asking them to point to where they would tap to do different tasks.'],
+        senior:['Low-fidelity Figma prototype (grayscale, no final copy) tested with five participants in a think-aloud navigation study; task-completion and error data recorded to inform information architecture revision.']
+      }
+    }
+  },
+  {
+    term:'Manipulating materials',
+    def:{
+      junior:'Working with materials by cutting, folding, mixing, or shaping them — without changing what they are made of.',
+      senior:'Working with existing materials in ways that do not change their properties. The composition and structure of the material is not altered — only its form, position, or arrangement.'
+    },
+    examples:{
+      food:{
+        junior:['Slicing fruit, mixing ingredients together, and arranging them in a bowl — without cooking or adding anything that would change what they are.'],
+        senior:['Slicing, portioning, and layering pre-prepared ingredients to assemble a salad kit; no thermal, chemical, or enzymatic process applied, so macronutrient composition and material properties are unchanged.']
+      },
+      textiles:{
+        junior:['Cutting fabric into pattern pieces and pinning them together to try the fit, without sewing or ironing yet.'],
+        senior:['Cutting, pinning, and hand-tacking fabric to construct a toile; no heat press, chemical treatment, or permanent joinery applied, so fibre structure, hand, and drape remain unaltered.']
+      },
+      hard:{
+        junior:['Sawing a piece of wood to the right length and sanding the edges smooth — the wood is still wood, just a different shape.'],
+        senior:['Sawing, drilling, and belt-sanding timber to specified dimensions; material removal is purely mechanical, leaving the cellular microstructure, moisture content, and strength properties unchanged.']
+      },
+      design:{
+        junior:['Cropping a photo and moving it around on your poster layout without changing the original image file.'],
+        senior:['Placing, scaling, and repositioning raster images and vector assets within a layout application using non-destructive transforms; original source files are not modified and no pixel data is resampled or merged.']
+      },
+      digital:{
+        junior:['Dragging pre-made buttons and icons around on a screen layout without changing how any of them are coded.'],
+        senior:['Arranging, resizing, and reordering pre-built component instances in a design system layout; no component logic, source tokens, or variant properties are edited — only placement and order are changed.']
+      }
+    }
+  },
+  {
+    term:'Mind map',
+    def:{
+      junior:'A diagram that starts with one central idea and branches out into related ideas — used to brainstorm and organise your thinking at the start of a project.',
+      senior:'A diagram used to represent words, ideas, tasks, or other items linked to and arranged radially around a central key word or idea. Used to explore the problem space, generate divergent ideas, and identify connections before narrowing focus.'
+    },
+    examples:{
+      food:{
+        junior:['A mind map starting with "school lunch" that branches into: cost, allergens, nutrition, packaging, taste, and how long it takes to make.'],
+        senior:['Radial mind map centred on "school lunch product" with six primary branches (nutrition, allergens, cost structure, packaging waste, production constraints, target-user preferences) and secondary branches identifying specific sub-constraints for each.']
+      },
+      textiles:{
+        junior:['A mind map starting with "sustainable swimwear" with branches for materials, colours, who would wear it, and how to wash it.'],
+        senior:['Mind map exploring "sustainable swimwear" across branches: fibre sourcing (recycled nylon, ECONYL, bio-based elastane), dyeing processes (GOTS-certified reactive, natural), end-of-life pathways (take-back, compostability), and market positioning.']
+      },
+      hard:{
+        junior:['A mind map about "flat-pack furniture" with branches for: what it is made of, how the pieces join, what tools you need, and who would use it.'],
+        senior:['Mind map for "flat-pack furniture system" with branches: material options (plywood, MDF, solid timber), joinery types (knock-down, press-fit, traditional), manufacturing constraints (laser cut, CNC, hand tools), sustainability (FSC certification, finishing systems), and target context.']
+      },
+      design:{
+        junior:['A mind map starting with "school brand" that branches into: colours, logo, fonts, how it will be used on the school website and uniform.'],
+        senior:['Mind map for "visual identity system" with primary branches: mark (wordmark, symbol, combination), typography (display, body, UI), colour system (primary, secondary, functional), photography style, motion principles, and application contexts (print, digital, environmental).']
+      },
+      digital:{
+        junior:['A mind map for "events app" with branches for: who uses it, what it does, what it looks like, and how people find out about events.'],
+        senior:['Mind map for "events app" with branches: user types (attendee, organiser, administrator), core features (discovery, booking, notifications, calendar sync), technical constraints (offline, accessibility, data privacy), and monetisation options (freemium, ticket commission, sponsorship).']
+      }
+    }
+  },
+  {
+    term:'Need',
+    def:{
+      junior:'A real problem or requirement that a person, group, or place has. A need is identified from an issue within a context — it describes what is missing or not working. Your technological outcome should attempt to meet this need.',
+      senior:'An identified requirement of a person, group, or environment. A need is identified from an issue and sits within a context. It is distinct from an opportunity in that it describes something that is lacking or inadequate, rather than a possibility to improve or extend. Technological practice can be undertaken in an attempt to meet an identified need.'
+    },
+    examples:{
+      food:{
+        junior:['Issue: students with coeliac disease have no safe option at the school canteen.','Need: a gluten-free, affordable lunch option produced in a certified facility so those students can eat safely at school.'],
+        senior:['Issue: students with coeliac disease are excluded from canteen purchasing due to cross-contamination risk.','Need: a canteen product produced in a certified gluten-free facility, meeting the Codex Alimentarius standard of ≤20 ppm gluten, priced within the existing canteen range — so these students have genuine, safe access to a hot or cold lunch.']
+      },
+      textiles:{
+        junior:['Issue: students are overheating and underperforming during summer PE because the current uniform fabric does not breathe.','Need: a sports uniform made from moisture-wicking fabric that keeps students cool enough to participate comfortably in summer sport.'],
+        senior:['Issue: current sports uniform fabric has an MVTR below 2000 g/m²/24hr, causing thermal discomfort during summer PE, with student survey data showing 68% report reduced participation.','Need: a replacement garment in certified moisture-wicking fabric (MVTR ≥5000 g/m²/24hr) that maintains opacity and survives the school laundry cycle — enabling full student participation regardless of temperature.']
+      },
+      hard:{
+        junior:['Issue: elderly residents in a rest home cannot safely use the bathroom without support, but grab bars require professional installation.','Need: a grab bar that is strong enough to prevent falls and can be installed independently by older adults without drilling into tiles.'],
+        senior:['Issue: 43% of falls among rest-home residents occur in bathrooms; current commercial grab rails require tile-penetrating fixings that residents or family cannot install without a licensed tradesperson.','Need: a surface-mounted grab rail that supports ≥150 kg lateral static load (AS 1428.1), installs without tile penetration, and can be fitted by a non-tradesperson in under 15 minutes — reducing fall risk without dependence on scheduled maintenance.']
+      },
+      design:{
+        junior:['Issue: new immigrants are arriving at a library and cannot navigate the building because all signs are in English only.','Need: wayfinding signage that communicates location and direction clearly to people who do not read English.'],
+        senior:['Issue: a central library serves a community in which 31% of users identify a language other than English as their primary language; current signage relies entirely on English text and is rated "confusing" by 72% of non-English-speaking survey respondents.','Need: a wayfinding system communicating route, location, and service information through standardised iconography (ISO 7010) and spatial logic — independent of any single language — so all users can navigate the building without assistance.']
+      },
+      digital:{
+        junior:['Issue: visually impaired users cannot complete purchases on a popular online store because the checkout does not work with their screen reader.','Need: an accessible checkout that a visually impaired user can operate fully using a screen reader and keyboard alone.'],
+        senior:['Issue: automated accessibility audit (axe DevTools) identifies 17 critical WCAG 2.1 failures in the checkout flow; moderated testing with screen-reader users records a 0% task-completion rate on the payment step.','Need: a fully WCAG 2.1 Level AA-compliant checkout, operable via NVDA/VoiceOver and keyboard-only navigation across all critical transaction paths, so visually impaired users can purchase independently.']
+      }
+    }
+  },
+  {
+    term:'Opportunity',
+    def:{
+      junior:'A chance to make something new or better — identified from an issue within a context. An opportunity is different from a need: instead of something being broken or missing, there is a positive possibility to create, improve, or extend something. Technological practice can be undertaken to realise an identified opportunity.',
+      senior:'An identified possibility for a person, group, or environment. Like a need, an opportunity is identified from an issue and sits within a context — but it describes a positive opening to improve, extend, or create, rather than a deficit to fix. Technological practice can be undertaken to realise an identified opportunity.'
+    },
+    examples:{
+      food:{
+        junior:['Issue: more students are choosing plant-based diets but the school canteen has no plant-based hot option.','Opportunity: to create a tasty, affordable plant-based lunch that gives these students a real choice at the canteen.'],
+        senior:['Issue: canteen sales data shows a 34% increase in students identifying as plant-based or flexitarian over three years, yet zero plant-based hot options are currently offered.','Opportunity: to develop a protein-dense (≥15 g/serve), shelf-stable plant-based snack targeting post-training recovery, priced at ≤$1.50 retail — realising a clear market gap while improving nutritional equity.']
+      },
+      textiles:{
+        junior:['Issue: students are throwing away clothes with small holes or tears rather than repairing them.','Opportunity: to design a visible-mending kit that makes repairs look intentional and stylish, so students are motivated to fix clothes instead of discarding them.'],
+        senior:['Issue: New Zealand households discard an estimated 32 kg of clothing per person annually; repair cafés report demand outstripping volunteer capacity, with 78% of attendees aged 18–35.','Opportunity: to develop a premium visible-mending patch kit that reframes garment damage as a design feature — tapping into slow-fashion values among a younger audience and reducing textile waste at the point of individual behaviour change.']
+      },
+      hard:{
+        junior:['Issue: schools with 3D printers rarely use them to make things that directly help students with physical differences.','Opportunity: to use the school\'s 3D printer to design and produce custom equipment or adaptive tools for students who need them.'],
+        senior:['Issue: FDM 3D printers are now present in 61% of NZ secondary schools (2023 NZCER data) but are predominantly used for curriculum modelling tasks rather than assistive applications.','Opportunity: to develop an open-source, parametric prosthetic hand-attachment library (e-NABLE compatible) sized for 8–18-year-olds, making bespoke assistive devices accessible to schools without specialist fabrication equipment.']
+      },
+      design:{
+        junior:['Issue: students are spending more time on screens and many teachers report declining reading engagement.','Opportunity: to design a printed reading journal that gives students a structured, screen-free way to track their reading and respond to what they read.'],
+        senior:['Issue: Ministry of Education data (2023) shows reading-for-pleasure rates among Year 9–10 students declining 18% over five years; teacher interviews identify lack of a structured analog response tool as a contributing factor.','Opportunity: to develop a designed reading journal that scaffolds literary response skills in a deliberate device-free format — addressing both engagement decline and the growing educator demand for screen-free learning tools.']
+      },
+      digital:{
+        junior:['Issue: people who have low vision or limited movement in their hands find it difficult to follow recipe videos on a screen while cooking.','Opportunity: to build a voice-controlled recipe assistant that lets users navigate recipes hands-free, without needing to look at a screen.'],
+        senior:['Issue: smart-speaker penetration reached 34% of NZ households by 2024 (Statista), yet no dedicated NZ-localised voice-first recipe assistant exists for users with low vision or upper-limb motor impairments.','Opportunity: to develop a voice-first recipe assistant that removes screen dependency entirely — realising the accessibility potential of existing smart-speaker infrastructure for an underserved user group.']
+      }
+    }
+  },
+  {
+    term:'Performance properties',
+    def:{
+      junior:'The qualities of a material that tell you how well it will do its job — such as how strong, waterproof, stretchy, or heat-resistant it is. Some can be measured precisely; others depend on people\'s opinions.',
+      senior:'Properties of materials that describe how they perform in use. Objective measurement is independent of individual perception (e.g. conductivity, UV resistance); subjective measurement is reliant on it (e.g. "warm and inviting").'
+    },
+    examples:{
+      food:{
+        junior:['A biscuit needs to be crisp (you can test this by snapping it) and stay fresh for at least a week in a sealed bag.'],
+        senior:['Objective: water activity (aW) ≤0.65 measured by chilled mirror hygrometry (shelf life ≥14 days); texture profile analysis (TPA) hardness ≥12 N.','Subjective: "crispy" rated ≥4/5 by ≥75% of sensory panel.']
+      },
+      textiles:{
+        junior:['A sports fabric needs to let sweat escape (wicking) and not go see-through when it gets wet.'],
+        senior:['Objective: moisture vapour transmission rate (MVTR) ≥5000 g/m²/24hr (ISO 11092); opacity ≥90% when wet (spectrophotometer).','Subjective: "comfortable against skin during exercise" rated ≥4/5 by wear-test panel.']
+      },
+      hard:{
+        junior:['Glass for a greenhouse needs to let light through but not break easily when it gets very hot or cold.'],
+        senior:['Objective: visible light transmittance ≥88% (EN 410); thermal shock resistance ≥40 °C delta (ISO 718); Vickers hardness 580 HV.','Subjective: rated "clinical and cool" — relevant consideration for interior application context.']
+      },
+      design:{
+        junior:['A typeface needs to be easy to read at small sizes and look right with the rest of the poster\'s design.'],
+        senior:['Objective: contrast ratio ≥4.5:1 at 16 px on white background (WCAG 2.1); x-height ratio ≥0.47.','Subjective: rated "authoritative and modern" by ≥70% of target-audience participants on a semantic differential scale.']
+      },
+      digital:{
+        junior:['An app needs to load quickly and be easy to use even on an older phone with a slow internet connection.'],
+        senior:['Objective: Lighthouse performance score ≥90; First Contentful Paint ≤1.8 s on simulated 4G.','Subjective: System Usability Scale (SUS) score ≥80 across iOS and Android test devices.']
+      }
+    }
+  },
+  {
+    term:'Plan of action',
+    def:{
+      junior:'A step-by-step plan showing what you will do, in what order, and when — so you use your time, materials, and resources well.',
+      senior:'A planning tool that outlines intended actions to accomplish a specific goal. Sets out how resources (time, expertise, materials, finance) will be used, and establishes key milestone outcomes with evaluation criteria.'
+    },
+    examples:{
+      food:{
+        junior:['Week 1: test three different recipes and note what works.','Week 2: find out the nutritional information for your chosen recipe.','Week 3: ask classmates to taste-test and fill in a feedback form.','Week 4: make the final product, cost it up, and take photos.'],
+        senior:['Phase 1: recipe development and aW testing (Weeks 1–2).','Phase 2: nutritional analysis using FoodWorks and unit cost modelling (Week 3).','Phase 3: sensory panel evaluation with target cohort (n=20, Year 7 students) against all specifications (Week 4).','Phase 4: final packaging design, product photography, and client presentation (Week 5).']
+      },
+      textiles:{
+        junior:['Day 1–2: source and buy fabric.','Day 3: cut out all pattern pieces.','Days 4–6: sew the garment together.','Day 7: try it on and check the fit against the brief.','Day 8: finish the edges and press the final garment.'],
+        senior:['Day 1–2: fabric sourcing, GOTS certification check, and quality inspection.','Day 3: pattern grading and precision cutting to ±2 mm tolerance.','Days 4–6: construction sequence following technical specification (seam type, stitch density).','Day 7: fit assessment against body-form measurements and brief specifications.','Day 8: final finishing, pressing, and photographic documentation.']
+      },
+      hard:{
+        junior:['Step 1: draw the design using CAD software.','Step 2: get teacher approval before cutting.','Step 3: laser-cut all pieces from the selected material.','Step 4: sand and finish all surfaces.','Step 5: load-test by placing weights on the finished piece.'],
+        senior:['Step 1: CAD modelling and DXF file export with kerf compensation.','Step 2: material nesting and teacher sign-off on cutting file.','Step 3: laser cutting at agreed feed rate and power settings.','Step 4: deburring and progressive sanding (P120 → P240 → P400).','Step 5: apply water-based finish — two coats, sand between coats.','Step 6: load test at 0.5 kg intervals; document results and refine if required.']
+      },
+      design:{
+        junior:['Week 1: research the client and look at similar designs for inspiration.','Week 2: sketch at least three different ideas and choose the strongest one.','Week 3: show the chosen design to the client and make changes based on feedback.','Week 4: finalise the design and prepare it for print.'],
+        senior:['Week 1: research and competitor benchmarking; stakeholder interview completed.','Week 2: three concept directions developed and presented to client.','Week 3: client feedback incorporated; selected direction refined to final artwork.','Week 4: print-ready files supplied (PDF/X-1a, 3 mm bleed, Fogra 39 colour profile) with brand style guide.']
+      },
+      digital:{
+        junior:['Week 1: interview users to find out what they need from the app.','Week 2: draw out the screens on paper and test them with classmates.','Week 3: build a digital version and test it with real users.','Week 4: fix the problems found in testing and prepare the final version.'],
+        senior:['Sprint 1 (Weeks 1–2): user research, journey mapping, and information architecture.','Sprint 2 (Weeks 3–4): lo-fi wireframes built in Figma; navigation tested with 5 users; IA revised.','Sprint 3 (Weeks 5–6): hi-fi visual design; component library built; WCAG 2.1 AA review.','Sprint 4 (Weeks 7–8): development handoff; accessibility audit using axe DevTools; stakeholder sign-off.']
+      }
+    }
+  },
+  {
+    term:'Prototyping',
+    def:{
+      junior:'Making a fully working version of your outcome to test whether it really meets the brief — before it goes into production or is handed to the end user.',
+      senior:'Modelling of a realised, but yet-to-be-implemented, technological outcome. The purpose is to evaluate fitness for purpose against the brief and establish a defensible case for implementation, refinement, or further development.'
+    },
+    examples:{
+      food:{
+        junior:['Making a full batch of 20 protein balls exactly as you would sell them, packaged and labelled, and getting your target group to evaluate them.'],
+        senior:['Production of a 20-unit pilot batch using final formula, packaging, and labelling. Evaluated by a target-group panel (n=10, Year 7 students) against all brief specifications, with sensory scores and compliance data documented.']
+      },
+      textiles:{
+        junior:['Sewing the final garment in the real fabric and asking the person who will wear it to try it on and tell you if anything needs to change.'],
+        senior:['Fully constructed, wearable sample garment in final specified fabric (200 g/m² GOTS-certified cotton), assessed by end user against all brief specifications. Fit, comfort, and appearance scored using a brief-referenced evaluation rubric.']
+      },
+      hard:{
+        junior:['Building the actual shelf from real timber and testing it by putting the correct weight of books on it before showing it to the client.'],
+        senior:['1:1 scale assembly from final-specification components (18 mm FSC plywood, stainless M6 hardware). Load-tested at specification (25 kg per shelf) with results documented; client sign-off obtained prior to production authorisation.']
+      },
+      design:{
+        junior:['Getting a test copy of your brochure printed at the correct size with the real colours, and checking it looks right before printing all 200 copies.'],
+        senior:['Print-ready mock-up at final trim size (A4, 3 mm bleed) with Fogra 39 colour-matched digital proof. Evaluated against brand style guide, client specifications, and print-supplier requirements before press approval.']
+      },
+      digital:{
+        junior:['Putting your app onto a real phone and asking five people to use it to complete real tasks while you watch.'],
+        senior:['High-fidelity coded prototype deployed to a staging environment. Moderated usability testing (n=5 representative users) with task-completion, time-on-task, and error-rate data collected and analysed against brief specifications prior to production release.']
+      }
+    }
+  },
+  {
+    term:'Specifications',
+    def:{
+      junior:'The exact, measurable requirements your outcome must meet — based on your brief. Each specification should be something you can test or check.',
+      senior:'Measurable definitions of the appearance and performance requirements in a brief, against which an outcome can be evaluated as fit for purpose. May also include constraints on the outcome and the technological practice used to develop it.'
+    },
+    examples:{
+      food:{
+        junior:['Contains no nuts and is made in a nut-free facility.','Costs less than $1.20 to make per unit.','Stays fresh for at least two weeks without refrigeration.','Contains no more than 8 g of sugar per 30 g serve.'],
+        senior:['≤8 g total sugar per 30 g serve (verified by HPLC analysis).','Produced in a nut-free certified facility (supplier declaration required).','Water activity (aW) ≤0.85 — confirms 14-day ambient shelf life.','Unit production cost ≤$1.20 at 100-unit pilot scale (costed via FoodWorks + supplier quotes).']
+      },
+      textiles:{
+        junior:['Holds at least 8 kg without the seams splitting.','Folds down to the size of an A5 notebook.','Made from certified organic cotton.','Can be washed in a standard machine at 40 °C.'],
+        senior:['Seam strength ≥8 kg load without failure (ISO 13934-1 strip method).','Folds to ≤A5 footprint (148 × 210 mm) without fasteners.','Fabric: GOTS-certified organic cotton (certification documentation required).','Dimensional change ≤2% after 10 machine washes at 40 °C (ISO 6330).']
+      },
+      hard:{
+        junior:['Holds phones from 8 mm to 12 mm thick without slipping.','Holds the phone at a comfortable viewing angle (around 65°).','Made from only three pieces — no glue needed.','Flat-packed, fits in a standard C5 envelope for posting.'],
+        senior:['Supports devices 8–12 mm thick at 60°–75° viewing angle without displacement under 300 g load.','Assembled from ≤3 components without adhesive.','Flat-pack footprint ≤C5 envelope dimensions (229 × 162 mm).','Material: 3 mm FSC-certified birch plywood (certification documentation required).']
+      },
+      design:{
+        junior:['Works in black and white as well as colour.','Can be read clearly when displayed very small (about the size of a thumbnail).','Achieves adequate colour contrast so it is readable by everyone.','Supplied as three different file formats for different uses.'],
+        senior:['Legible at 16 px screen size without detail loss.','Reproduces in single colour (black) without loss of meaning.','Contrast ratio ≥4.5:1 on white background (WCAG 2.1 AA — verified with WebAIM Contrast Checker).','Delivered as: SVG (scalable master), PNG at 300 dpi, and print-ready EPS.']
+      },
+      digital:{
+        junior:['Loads the home screen in under 2 seconds on a normal mobile connection.','Works on both iPhones and Android phones.','Can be used by someone who is partially sighted.','Allows users to complete the main task without making mistakes.'],
+        senior:['First Contentful Paint ≤1.8 s on 4G (measured via Chrome DevTools Lighthouse).','Compatible with iOS 15+ and Android 11+ (verified on physical devices).','Achieves WCAG 2.1 Level AA (zero critical violations in axe DevTools audit).','Task-completion rate ≥90% for primary user journey in moderated usability testing (n=5).']
+      }
+    }
+  },
+  {
+    term:'Stakeholder',
+    def:{
+      junior:'Anyone who is affected by or has an interest in your technological outcome. Key stakeholders are directly involved in or directly affected by the outcome or process. Wider stakeholders are less directly affected, but still have some level of interest or influence — or may be impacted in the future.',
+      senior:'Any individual or group with a vested interest in a technological development or technological outcome. Key stakeholders are those directly influential in, or directly impacted by, the technological practice itself and/or its resulting outcomes (including the technological outcome and any by-products). Wider community stakeholders are less directly influential or impacted, but can be identified as having some level of influence — often through others — and/or may be affected by the project or its outcome in the future.'
+    },
+    examples:{
+      food:{
+        junior:['Key stakeholders: the students who will eat the snack (directly affected) and the canteen manager who will sell it (directly involved in production decisions).','Wider stakeholders: parents and whānau who care about what their children eat; the school board who sets nutrition policy — less directly involved, but their decisions shape what is possible.'],
+        senior:['Key stakeholders: Year 7 students (end users, sensory panel — directly impacted by the outcome); canteen manager (procurement decisions and margin requirements — directly influential in practice).','Wider stakeholders: parents/whānau (nutritional policy concerns, influence through school board); school board (health and safety obligations, indirect authority over canteen policy); Ministry of Education (Healthy Canteen guidelines — sets the regulatory environment).']
+      },
+      textiles:{
+        junior:['Key stakeholders: the students wearing the uniform (directly affected) and the PE teacher who defined what it needs to do (directly influential in setting requirements).','Wider stakeholders: the school board (sets uniform policy); parents (pay for uniforms and may have sustainability concerns) — both have influence, but through institutional channels rather than direct involvement.'],
+        senior:['Key stakeholders: student athletes (end users, wear-test participants — directly impacted); PE faculty (specification originators — directly influential in practice).','Wider stakeholders: school board (uniform policy, budget allocation); parents/whānau (cost and sustainability values, influence through board); sports uniform supplier (production feasibility — affected by design decisions but not a decision-maker).']
+      },
+      hard:{
+        junior:['Key stakeholders: the elderly person who will use the grab bar (directly affected by the outcome) and the occupational therapist who identified the need (directly influential in requirements).','Wider stakeholders: the landlord (may need to approve installation); future tenants (could benefit or be affected later) — less involved now, but potentially impacted.'],
+        senior:['Key stakeholders: end user (mobility assessment documented by occupational therapist — directly impacted); OT (specification authority — directly influential in practice).','Wider stakeholders: building owner (structural consent implications — affected by installation method); future tenants (reversible installation is in their interest); local council (NZS 4121 building code compliance — regulatory influence).']
+      },
+      design:{
+        junior:['Key stakeholders: the organisation that asked for the new identity (directly influential — they approve everything) and the design team (directly involved in creating it).','Wider stakeholders: the community the organisation serves (will see and use the identity); the printer who produces it (affected by file specifications) — both have an interest but less direct control.'],
+        senior:['Key stakeholders: commissioning organisation (client, sign-off authority — directly influential); design team (practice stakeholders — directly involved).','Wider stakeholders: community the organisation serves (cultural appropriateness and accessibility of the identity affects them); print and digital production suppliers (technical constraints affect what is possible); regulatory body if sector-specific branding rules apply (e.g. health, education, government).']
+      },
+      digital:{
+        junior:['Key stakeholders: the students using the app (directly affected by the outcome) and the teachers who monitor progress (directly affected by how data is presented).','Wider stakeholders: the school IT team (responsible for security and infrastructure); parents and whānau (privacy concerns); the Ministry of Education (data and privacy regulations) — all have an interest, but influence the project indirectly.'],
+        senior:['Key stakeholders: students (end users, usability-test participants — directly impacted); class teachers (dashboard users, feedback providers — directly influential in shaping requirements).','Wider stakeholders: school IT administrators (security, infrastructure, data sovereignty — affected by technical decisions); parents/whānau (privacy, influence through school governance); Ministry of Education (Privacy Act 2020 compliance and NZISM alignment — sets the legal and regulatory framework).']
+      }
+    }
+  },
+  {
+    term:'Sustainability',
+    def:{
+      junior:'Using resources and making products in a way that does not harm the environment or use up things that future generations will need.',
+      senior:'The use of resources, creation of products, and/or provision of services in such a way as to meet present needs without compromising the ability of future generations to meet their needs by the same or similar means.'
+    },
+    examples:{
+      food:{
+        junior:['Using packaging that can be composted at home, and making sure any leftover food becomes compost for the school garden instead of going to landfill.'],
+        senior:['Closed-loop production: food processing offcuts directed to school composting programme.','Packaging: TÜV-certified home-compostable within 180 days.','Supply chain: mapped for food miles and Scope 3 emissions.']
+      },
+      textiles:{
+        junior:['Using fabric certified as organic, dyeing it with plants instead of chemicals, and designing the pattern so there is as little leftover fabric as possible.'],
+        senior:['Zero-waste pattern cutting (≤5% offcut target) using GOTS-certified organic cotton.','Dye bath formulated using OEKO-TEX certified reactive dyes.','Take-back scheme designed into product lifecycle from the outset.']
+      },
+      hard:{
+        junior:['Using reclaimed wood from an old building, finishing it with water-based paint instead of chemical varnish, and designing it so it can be taken apart and repaired.'],
+        senior:['Material specification: FSC-certified reclaimed rimu where available.','Finish: water-based, VOC-compliant (≤30 g/L).','Disassembly-first joint design enabling component-level repair and end-of-life material separation.']
+      },
+      design:{
+        junior:['Printing on recycled paper with plant-based inks, and making a digital version of the campaign so less printing is needed.'],
+        senior:['Stock: recycled-content paper (≥60% post-consumer waste).','Inks: soy-based, certified low-VOC.','Digital-first campaign strategy reducing print volume by ≥60%.','Print files optimised for sheet-gang printing to minimise paper waste per copy.']
+      },
+      digital:{
+        junior:['Hosting the app on servers that use renewable energy, and writing efficient code so the app does not use more power than it needs to.'],
+        senior:['Hosting: renewable-energy matched data centre (e.g. AWS EU-West-1).','Code optimisation: image compression, lazy loading, and caching strategy to reduce data transfer per session.','Annual Digital Carbon Report published per Green Software Foundation guidelines.']
+      }
+    }
+  },
+  {
+    term:'Technological modelling',
+    def:{
+      junior:'Testing your design ideas in a practical way to find out if they will work. There are two types: functional modelling (testing ideas early on) and prototyping (testing the final version).',
+      senior:'The testing of design ideas to assess whether they can contribute to a fit-for-purpose outcome. Encompasses both functional modelling (ongoing concept testing) and prototyping (evaluation of a fully realised model). Involves functional reasoning (how to make it happen) and practical reasoning (should it happen).'
+    },
+    examples:{
+      food:{
+        junior:['Functional: making small test batches to try out different flavours.','Prototype: making the full final product for your client to taste and approve.'],
+        senior:['Functional: systematic variable-testing across two formulation parameters with sensory and aW measurement to narrow formula options.','Prototype: final-specification pilot batch evaluated by target cohort against all brief specifications.']
+      },
+      textiles:{
+        junior:['Functional: sewing a practice version in cheap fabric to test the pattern.','Prototype: making the complete garment in the real fabric for the client to try on.'],
+        senior:['Functional: half-scale calico toile to evaluate proportion and ease; results documented with annotated photographs.','Prototype: full-scale garment in specified fabric evaluated against brief by end user and independent assessor.']
+      },
+      hard:{
+        junior:['Functional: testing three different thicknesses of MDF to see which is strongest.','Prototype: building the real version from timber and load-testing it properly.'],
+        senior:['Functional: MDF test cuts to evaluate joint fit tolerance and structural rigidity under incremental loading.','Prototype: final assembly in specified timber, load-tested to specification, with results documented as a defensible case for client sign-off.']
+      },
+      design:{
+        junior:['Functional: printing rough versions to check if text is readable from far away.','Prototype: producing a final full-colour print proof to show the client before going to press.'],
+        senior:['Functional: greyscale A3 proofs for legibility and hierarchy evaluation; 4-participant first-impression test.','Prototype: colour-matched final proof (Fogra 39) evaluated against brand standards and brief specifications with client.']
+      },
+      digital:{
+        junior:['Functional: testing your paper sketches with users to find out if they understand the layout.','Prototype: testing the real coded app with users on an actual phone.'],
+        senior:['Functional: lo-fi prototype navigation study (n=5) to validate information architecture.','Prototype: hi-fi coded staging-environment deployment for moderated usability testing with task-completion and error metrics collected against brief specifications.']
+      }
+    }
+  },
+  {
+    term:'Technological practice',
+    def:{
+      junior:'The full process of creating a technological outcome — from identifying a need, through designing and testing, to producing a final outcome that works as intended.',
+      senior:'The incremental practices involved in creating a technological outcome: identifying needs or opportunities, exploring and defining potential outcomes, developing, modelling, evaluating, and testing to ensure fitness for purpose.'
+    },
+    examples:{
+      food:{
+        junior:['Noticing students with allergies have no safe canteen options → researching ingredients → testing recipes → asking a dietitian → trialling with students → making the final product.'],
+        senior:['Issue identified (nutritional inequity for students with dietary restrictions).','Stakeholder consultation and brief development.','Iterative recipe development with functional modelling (aW testing, sensory evaluation).','Pilot production and outcome evaluation against all specifications.']
+      },
+      textiles:{
+        junior:['Noticing students get too hot in summer sport → researching fabrics → making a test uniform → getting students to wear it → improving the design → making the final uniform.'],
+        senior:['Wear-comfort data collected (survey and physiological monitoring).','Fabric benchmarking and pattern development.','Toile construction and structured wear trial with stakeholder feedback.','Specification refinement and final outcome production.']
+      },
+      hard:{
+        junior:['Noticing classroom door handles are hard for wheelchair users → researching lever designs → making prototypes → testing with wheelchair users → improving the design.'],
+        senior:['Ergonomic needs analysis (OT consultation, AS 1428.1 review).','CAD concept development and functional modelling (PLA prints, lever-force testing).','Stakeholder evaluation and specification refinement.','CNC-machined prototype → compliance testing → client sign-off.']
+      },
+      design:{
+        junior:['Noticing visitors get lost in the school → surveying students → sketching sign ideas → testing if people can understand them → improving and getting the signs made.'],
+        senior:['Wayfinding audit and user journey mapping.','Stakeholder consultation and concept development (three directions).','Legibility testing and focus group evaluation; design refinement.','Print-ready artwork production and fabrication sign-off.']
+      },
+      digital:{
+        junior:['Noticing students miss homework deadlines → interviewing students → sketching app screens → testing with users → fixing problems → building the real app.'],
+        senior:['Needs analysis (survey data and teacher interviews).','User personas, journey mapping, and information architecture.','Lo-fi prototyping and usability testing; design iteration.','Hi-fi prototype → accessibility audit → development handoff → staged rollout with monitoring.']
+      }
+    }
+  },
+  {
+    term:'Transformation processes',
+    def:{
+      junior:'Processes that change the structure of a material so that some of its properties are different — even though it is still the same material. Examples include heating, beating, or pressing.',
+      senior:'Processes that change inputs into outputs in a controlled and intended way. Transforming changes the structure or particle alignment within an existing material to alter some of its properties, while its composition remains the same material.'
+    },
+    examples:{
+      food:{
+        junior:['Whisking egg whites turns them from liquid into a stiff foam — they are still egg white, but the structure has completely changed.'],
+        senior:['Mechanical denaturation: whisking egg albumen incorporates air and unfolds globular proteins, creating a semi-stable foam network.','Composition (ovalbumin, ovotransferrin, water) is unchanged; rheological properties (viscosity, yield stress) are transformed.']
+      },
+      textiles:{
+        junior:['Felting wool fibres by rubbing them with hot water and soap turns them into a solid, dense fabric — the wool is the same, but it can no longer be pulled apart into separate fibres.'],
+        senior:['Wet felting: heat, moisture, and friction cause directional scale interlock between keratin fibres, consolidating loose fibre into a non-woven web.','Fibre composition (keratin) is unchanged; tensile, porosity, and drape properties are fundamentally transformed.']
+      },
+      hard:{
+        junior:['Heating and quickly cooling steel (quenching) makes it much harder — it is still steel, but the inside structure has changed.'],
+        senior:['Quench hardening: rapid cooling from ≥723 °C transforms face-centred cubic austenite to body-centred tetragonal martensite, increasing hardness (up to 65 HRC).','Chemical composition unchanged; subsequent tempering modifies brittleness by partial martensite decomposition.']
+      },
+      design:{
+        junior:['Converting a vector logo into a JPEG for a website changes it from a set of lines and shapes described by mathematics into a grid of coloured pixels — it looks the same but works very differently.'],
+        senior:['Rasterisation: vector paths (Bézier curves) are sampled to a pixel grid at a specified resolution.','Visual appearance is preserved within raster constraints; underlying data representation changes from parametric to discrete — scaling behaviour and editability are fundamentally altered.']
+      },
+      digital:{
+        junior:['Compressing a photo from PNG to WebP makes the file much smaller so it loads faster on a website — the image looks almost the same, but the data inside has been reorganised.'],
+        senior:['Lossy/lossless WebP encoding applies discrete cosine transform (DCT) and entropy coding to pixel data, reducing file size by 25–35% relative to PNG.','Visual content is perceptually preserved; binary structure, colour depth representation, and decoding pathway are transformed.']
+      }
+    }
+  },
+  {
+    term:'Usability',
+    def:{
+      junior:'How easy it is for people to use your outcome to do what it was designed to do. A usable outcome is easy to learn, easy to remember how to use, and leaves people feeling confident.',
+      senior:'The ease with which people can employ a particular tool or object to achieve a particular goal. Includes learnability, retainability, and user satisfaction. In human-computer interaction, usually refers to the elegance and clarity of a user interface.'
+    },
+    examples:{
+      food:{
+        junior:['A good recipe card has high usability if a Year 7 student who has never cooked before can follow it without asking for help.'],
+        senior:['A meal-kit package has high usability if a first-time user achieves task completion on first attempt, with a SUS score ≥80 and zero critical navigation errors in think-aloud testing.']
+      },
+      textiles:{
+        junior:['A sewing pattern has high usability if a beginner can cut and assemble the garment correctly using only the printed instructions, without needing help.'],
+        senior:['A pattern has high usability if novice dressmakers achieve task completion on first use, with learnability measured by time-on-task and error count, and retainability assessed at a 2-week retest interval.']
+      },
+      hard:{
+        junior:['A folding bike has high usability if a new user can fold it in under 20 seconds after one demonstration, without looking at the instructions.'],
+        senior:['A folding bike has high usability if task completion (fold/unfold cycle) is achieved in ≤20 s after a single 30-second demonstration, error-free, with SUS score ≥85 and retention confirmed at a 1-week interval.']
+      },
+      design:{
+        junior:['A form has high usability if most people can fill it in correctly without needing to re-read anything or ask for help.'],
+        senior:['A form has high usability if ≥95% of representative users complete it with ≤1 error, mean time-on-task is within 20% of expert benchmark, and post-task confidence is rated ≥4/5 on a Likert scale.']
+      },
+      digital:{
+        junior:['A banking app has high usability if a new user can transfer money to someone else within a few minutes of using it for the first time, without making mistakes.'],
+        senior:['A banking app has high usability if first-time users achieve ≥95% task completion on the transfer critical path in ≤2 min, with ≤1 navigation error, SUS ≥80, and ≥70% rating the experience as confidence-inspiring post-test.']
+      }
+    }
+  },
+  {
+    term:'Usability testing',
+    def:{
+      junior:'Watching real people use your outcome to complete tasks, and writing down where they get confused or make mistakes, so you can improve your design.',
+      senior:'A structured observation of users performing tasks with a working system or prototype. Users think aloud while completing tasks. The evaluator observes performance, noting problems, comments, and circuitous paths. Collects both quantitative (time, error count) and qualitative data.'
+    },
+    examples:{
+      food:{
+        junior:['Tools used: observation sheet, stopwatch, tally sheet for errors or confusion moments.','Watch five students use the new self-serve salad bar and write down every time they cannot find what they are looking for.'],
+        senior:['Tools used: think-aloud protocol guide, observation log, stopwatch, video recording (with consent), post-task questionnaire.','Moderated think-aloud study (n=5, Year 7 students): participants verbalise while locating allergen information and serving a meal.','Record task-completion rate, time-on-task, and verbal confusion cues. Results inform label placement revision.']
+      },
+      textiles:{
+        junior:['Tools used: printed observation checklist, timer, written feedback form for the participant.','Ask three people who have never seen your pattern to sew the garment while thinking aloud, and note every time they are unsure what to do next.'],
+        senior:['Tools used: think-aloud protocol, observer notation sheet, video recording, error log spreadsheet.','Think-aloud protocol with three novice dressmakers: participants verbalise interpretation as they follow the pattern.','Record pause duration, re-read frequency, and assembly errors. Data informs notation revision prior to print.']
+      },
+      hard:{
+        junior:['Tools used: observation sheet, stopwatch, written tally for hesitations and wrong-component picks.','Ask five people to assemble your flat-pack stool while saying out loud what they are thinking, and note every time they pick up the wrong piece or get confused.'],
+        senior:['Tools used: think-aloud protocol, video recording, assembly error log, SUS questionnaire (post-task).','Moderated assembly study (n=5 non-expert participants): participants think aloud while following assembly instructions.','Record hesitations (>5 s), component misidentifications, and sequence deviations. Error clusters inform instruction redesign.']
+      },
+      design:{
+        junior:['Tools used: printed observation sheet, stopwatch, distance legibility test (tape measure to mark 3 m and 5 m).','Ask users to find a specific article in your redesigned magazine layout while saying out loud what they are looking at, and time how long it takes.'],
+        senior:['Tools used: think-aloud protocol, Lookback or Maze for remote sessions, time-on-task log, SUS questionnaire, heat-map tool (e.g. Hotjar for digital layouts).','Think-aloud navigation study (n=5 representative readers): participants verbalise while completing a structured search task.','Record time-on-task, verbalised uncertainty, and hierarchy errors. Results inform labelling and typographic hierarchy revision.']
+      },
+      digital:{
+        junior:['Tools used: paper observation sheet, stopwatch, screen recording app (e.g. Loom), error tally sheet.','Sit with five people while they try to book a doctor\'s appointment on your new website, and write down every time they get stuck or do something unexpected.'],
+        senior:['Tools used: Maze or Lookback (moderated sessions), Loom for screen + audio capture, SUS questionnaire, task log spreadsheet, axe DevTools for post-session accessibility check.','Moderated usability study (n=5) on staging environment: participants complete GP booking task while thinking aloud.','Record task-completion rate, time-on-task, error count, and SUS score. Severity-rated findings inform prioritised design revision.']
+      }
+    }
+  }
+];
+
+let activeLevel='junior';
+let activeFilter='all';
+let activeAlpha='all';
+
+function buildFilters(){
+  const fr=document.getElementById('filterRow');
+  let h=`<button class="pill pill-all active" onclick="setFilter('all',this)">All areas</button>`;
+  AREAS.forEach(a=>{h+=`<button class="pill ${a.pillCls}" onclick="setFilter('${a.key}',this)">${a.label}</button>`;});
+  fr.innerHTML=h;
+}
+
+function buildAlpha(){
+  const letters=[...new Set(TERMS.map(t=>t.term[0].toUpperCase()))].sort();
+  const ab=document.getElementById('alphaBar');
+  let h=`<button class="alpha-btn active" onclick="setAlpha('all',this)">All</button>`;
+  letters.forEach(l=>{h+=`<button class="alpha-btn" onclick="setAlpha('${l}',this)">${l}</button>`;});
+  ab.innerHTML=h;
+}
+
+function setLevel(lv,btn){
+  activeLevel=lv;
+  document.querySelectorAll('.level-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+function setFilter(key,btn){
+  activeFilter=key;
+  document.querySelectorAll('#filterRow .pill').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+function setAlpha(letter,btn){
+  activeAlpha=letter;
+  document.querySelectorAll('.alpha-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+function render(){
+  const q=document.getElementById('searchInput').value.toLowerCase().trim();
+  let filtered=TERMS.filter(t=>{
+    const def=t.def[activeLevel]||'';
+    const exVals=Object.values(t.examples).flatMap(e=>e[activeLevel]||[]);
+    const matchSearch=!q||t.term.toLowerCase().includes(q)||def.toLowerCase().includes(q)||exVals.some(e=>e.toLowerCase().includes(q));
+    const matchAlpha=activeAlpha==='all'||t.term[0].toUpperCase()===activeAlpha;
+    return matchSearch&&matchAlpha;
+  });
+
+  const list=document.getElementById('termList');
+  const countLabel=document.getElementById('countLabel');
+  if(!filtered.length){list.innerHTML='<div class="no-results">No terms match your search.</div>';countLabel.textContent='';return;}
+  countLabel.textContent=filtered.length+' term'+(filtered.length!==1?'s':'');
+
+  const showAreas=activeFilter==='all'?AREAS:AREAS.filter(a=>a.key===activeFilter);
+
+  list.innerHTML=filtered.map(t=>{
+    const def=t.def[activeLevel]||'';
+    const chips=showAreas.filter(a=>t.examples[a.key]&&t.examples[a.key][activeLevel]).map(a=>{
+      const bullets=t.examples[a.key][activeLevel].map(b=>`<li>${b}</li>`).join('');
+      return `<div class="ex-chip ${a.chipCls}"><span class="area">${a.label}</span><ul>${bullets}</ul></div>`;
+    }).join('');
+    return `<div class="term-card">
+      <div class="term-name">${t.term}</div>
+      <div class="def-text">${def}</div>
+      ${chips?`<div class="examples-label">Examples</div><div class="examples-grid">${chips}</div>`:''}
+    </div>`;
+  }).join('');
+}
+
+buildFilters();
+buildAlpha();
+render();
+</script>
+</body>
+</html>
