@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A staff technology education glossary with junior and senior explanations, six technology domains and curriculum connections.">
+<title>Technology Education Glossary</title>
+<link rel="stylesheet" href="style.css?v=20261111">
+</head>
+<body>
+<a class="skip-link" href="#termList">Skip to glossary</a>
+<header class="site-header">
+ <div class="header-top">
+  <div class="eyebrow">STAFF REFERENCE · YEARS 9–13</div>
+  <h1>Technology Education Glossary</h1>
+  <p>Food · Textiles · Resistant Materials · Spatial &amp; Product Design · Digital · Systems &amp; Control</p>
+  <div class="top-links"><a href="#review">Curriculum review &amp; sources</a><a href="https://github.com/AliaM001/tech-glossary">GitHub &amp; updates</a></div>
+ </div>
+ <div class="header-controls">
+  <div class="level-toggle" role="group" aria-label="Explanation level">
+   <button class="level-btn active" data-level="junior" aria-pressed="true">Years 9–10 · Junior explanations</button>
+   <button class="level-btn" data-level="senior" aria-pressed="false">Years 11–13 · Senior explanations</button>
+  </div>
+  <div class="search-filter-row">
+   <div class="search-wrap"><label for="searchInput" class="sr-only">Search glossary terms, definitions and examples</label><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Search terms, definitions or examples…"></div>
+  </div>
+  <div class="filter-pills" id="filterRow" role="group" aria-label="Technology domain"></div>
+  <div class="select-row">
+   <label for="curriculumSelect">Curriculum connection <select id="curriculumSelect"><option value="all">All curriculum connections</option><option value="nzc">NZC 2007+ framework</option><option value="p4">Phase 4 · Years 9–10</option><option value="p5">Phase 5 · Proposed content</option></select></label>
+   <label for="kindSelect">Vocabulary <select id="kindSelect"><option value="all">Shared and specialist</option><option value="shared">Shared across six domains</option><option value="specialist">Specialist vocabulary</option></select></label>
+   <button class="reset-btn" id="resetBtn">Reset filters</button>
+  </div>
+  <div class="alpha-row" id="alphaBar" role="group" aria-label="First letter of term"></div>
+ </div>
+</header>
+<main>
+ <div class="review-note">Reviewed 11 November 2026 · Phase 5 content is proposed. Curriculum links show teaching connections; examples are written for this staff resource.</div>
+ <div class="count-label" id="countLabel" aria-live="polite" role="status"></div>
+ <div id="termList" tabindex="-1"></div>
+ <section id="review" class="review-section" aria-labelledby="reviewTitle">
+  <h2 id="reviewTitle">Curriculum review &amp; sources</h2>
+  <p>The original 25 terms provided a useful design-process foundation with examples in five domains. This review expands the glossary to <strong>148 entries</strong>: 59 shared terms with junior and senior examples in all six domains, plus 89 specialist entries with examples in their applicable domain.</p>
+  <p>Systems and Control is now a separate domain. Resistant materials includes the original hard-materials context; Spatial and Product Design includes the original design and visual communication context. Digital Technology connects to Year 11 Digital Technologies, Computer Science and Digital Media.</p>
+  <details><summary>What does “sufficient vocabulary” mean here?</summary>
+   <p>This is a broad foundation for staff planning, assessed by coverage of curriculum strands and recurring disciplinary concepts, rather than a minimum word count. It supports vocabulary teaching across NZC 2007+, Phase 4 and the proposed Phase 5 subject pathways. It is not a statement-by-statement certification of a teaching programme or an NCEA assessment guide.</p>
+   <p>Specialist entries group some related concepts. Staff should unpack them in their units, teach the exact tools, techniques, ingredients, materials and software used, and revisit vocabulary as the proposed senior content develops. Junior explanations make advanced terms approachable; they do not imply that all senior concepts are compulsory in Years 9–10.</p>
+  </details>
+  <details><summary>Curriculum status and mapping</summary>
+   <ul>
+    <li><strong>NZC 2007+:</strong> the existing Technology framework, including the 2017 digital technology revision. Review connections cover technological practice, technological knowledge and nature of technology, including all eight achievement-objective components.</li>
+    <li><strong>Phase 4:</strong> Years 9–10 content in the 2026 National Curriculum Statement. The review uses Schedule 2, pp. 274–280: Design, Make, and Innovate; Spatial and Product Design; Materials Technology; Food and Processing; Systems and Control; and Digital Technology.</li>
+    <li><strong>Phase 5:</strong> the eight October 2026 subject teaching documents. Tāhūrangi identifies this content as proposed, with formal status and assessment information pending and staged use planned from 2028–2030. The current senior curriculum remains in effect during transition.</li>
+   </ul>
+   <p>Each card links to the relevant source and location. “Teaching connection” is an editorial mapping, not a claim that the exact glossary term appears verbatim in a mandatory statement. Level and domain filters change the examples shown. Curriculum filters show entries with a mapped connection; they are not year-level teaching checklists.</p>
+  </details>
+  <details><summary>Changes to the original glossary</summary>
+   <p>All original entries and examples are retained. Systems and Control examples are added to every original entry. Seven definitions are revised: Attribute, Context, Critical evaluation, Manipulating materials, Sustainability, Transformation processes, and Usability testing. The revisions avoid rigid distinctions, acknowledge contextual judgement and remove an assumption that usability tests must use think-aloud.</p>
+   <p>Numerical values in examples are illustrative design targets or scenarios. Use appropriate expert guidance and school procedures when establishing actual safety limits or operating requirements.</p>
+  </details>
+  <p><a href="CURRICULUM-REVIEW.md">Read the coverage review</a> · <a href="coverage.csv" download>Download the term coverage table (CSV)</a> · <a href="terms.json" download>Download editable vocabulary data (JSON)</a></p>
+  <div id="sourceList"></div>
+ </section>
+</main>
+<footer>Technology Education Glossary · Staff reference · Reviewed 11 November 2026<br>Definitions and new examples are editorial teaching explanations, with links to Ministry curriculum sources.</footer>
+<noscript><p class="review-note">JavaScript is required for search and glossary cards. You can <a href="terms.json">read the vocabulary data</a> or <a href="CURRICULUM-REVIEW.md">open the curriculum review</a>.</p></noscript>
+<script id="glossary-data" type="application/json">__GLOSSARY_DATA__</script>
+<script src="app.js?v=20261111"></script>
+</body>
+</html>
+
