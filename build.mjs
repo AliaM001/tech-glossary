@@ -5,7 +5,8 @@ const root=path.dirname(fileURLToPath(import.meta.url));
 const read=name=>fs.readFileSync(path.join(root,name),'utf8');
 const terms=JSON.parse(read('terms.json'));
 const {sources}=JSON.parse(read('sources.json'));
-const domains=['food','textiles','hard','design','digital','systems'];
+const sharedDomains=['food','textiles','hard','design','digital','systems'];
+const domains=[...sharedDomains,'ece','baking','hospitality'];
 const names=new Set();
 for(const t of terms){
  if(!t.term||names.has(t.term))throw Error('Missing or duplicate term: '+t.term);
@@ -16,7 +17,7 @@ for(const t of terms){
    if(!domains.includes(domain)||!e[level]?.length||e[level].some(x=>!x.trim()))throw Error('Missing or invalid example: '+t.term+' '+domain+' '+level);
   }
  }
- if(t.kind==='shared'&&domains.some(d=>!t.examples[d]))throw Error('Shared term missing a domain: '+t.term);
+ if(t.kind==='shared'&&sharedDomains.some(d=>!t.examples[d]))throw Error('Shared term missing a core technology domain: '+t.term);
  if(!Object.keys(t.examples).length||!t.refs.length||t.refs.some(r=>!sources[r.id]||!r.section))throw Error('Invalid sources or domains: '+t.term);
 }
 terms.sort((a,b)=>a.term.localeCompare(b.term,'en-NZ'));

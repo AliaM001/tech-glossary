@@ -6,7 +6,7 @@ Reviewed 11 November 2026. Definitions, new examples and curriculum connections 
 
 The original 25 entries provided a useful design-process foundation, each with junior and senior examples in five domains. They were **not broad enough as the sole vocabulary reference** against all three curriculum contexts requested. Systems, technological knowledge, responsible practice and disciplinary vocabulary needed expansion.
 
-The revised edition has **148 entries: 59 shared and 89 specialist**. Every shared entry has junior and senior examples in all six domains. Specialist examples use authentic disciplinary applications. Systems and Control is added as a separate domain. Updated labels retain the original hard-materials and design/visual-communication contexts.
+The revised edition has **220 entries: 59 shared and 161 specialist**. Every shared entry has junior and senior examples in the six core Technology domains. Sixteen shared entries also include applications in ECE, Baking and Hospitality. Specialist examples use authentic disciplinary applications. Systems and Control is added as a separate domain. Updated labels retain the original hard-materials and design/visual-communication contexts.
 
 This is a broad staff vocabulary foundation. Sufficiency depends on the programme and context: a glossary cannot establish that all required knowledge and practices have been taught. Grouped entries introduce several concepts that teachers should unpack explicitly. Junior explanations introduce advanced vocabulary; they do not imply that all senior concepts are required in Years 9–10.
 
@@ -45,7 +45,7 @@ These are teaching connections, not verbatim matches or a full achievement-objec
 | Systems and Control, p. 279 | Representations, sensors, actuators, mechanisms, feedback, control, microcontrollers, interfaces, reliability, faults |
 | Digital Technology, p. 280 | Computational thinking, representation, programming, tracing/testing, media, assets/workflows, responsible AI |
 
-Materials Technology includes resistant materials and textiles. The website separates these teaching domains to preserve useful examples. Its six domain labels therefore do not exactly reproduce official strand labels.
+Materials Technology includes resistant materials and textiles. The website separates these teaching domains to preserve useful examples. The six core domain labels therefore do not exactly reproduce official strand labels. The three additional subject areas are described separately below.
 
 ## Proposed Phase 5 coverage
 
@@ -59,6 +59,20 @@ Materials Technology includes resistant materials and textiles. The website sepa
 | ComputerScience-Years12-13-Oct26.pdf | Computational Thinking pp. 7–8, Data/Systems pp. 9–12, Software pp. 13–14, AI pp. 15–17, Writing p. 18: complexity, data structures, objects, regular languages, databases, networks, security, Māori data sovereignty, AI |
 | DigitalMedia-Years12-13-Oct26.pdf | Management pp. 8–10, Foundations pp. 11–15, Define/Design pp. 16–17, Develop/Release/Evaluate pp. 18–20, Writing p. 21: contexts, audience, assets, representations, scope, responsible practice, release evidence |
 | ElectronicsandMechatronics-Years12-13-Oct26.pdf | Sensing p. 8, Actuation p. 9, Control p. 10, Integration/Testing pp. 11–13, Writing p. 14: calibration, uncertainty, sampling, mechanisms, power, states, protocols, recovery, testability |
+
+## ECE, Baking and Hospitality extension
+
+These subject areas add **72 specialist entries**, plus relevant examples for 16 shared terms. Each subject button therefore shows **40 entries** with junior and senior explanations and examples. Explanation levels are for secondary learners studying the subject, including ECE; they are not developmental levels for young children.
+
+| Subject | Specialist coverage | Source basis |
+| --- | --- | --- |
+| Early Childhood Education (24) | Te Whāriki; four principles; five strands; dispositions and working theories; local curriculum; agency, inclusion and relationships; assessment, learning stories, transitions and reflective practice | Ministry Te Whāriki framework, learning outcomes, glossary, assessment and pathways pages |
+| Baking (24) | Ingredient scaling and baker’s percentages; hydration; gluten and dough; fermentation, proving and preferments; aeration; cake methods; pastry; baking changes, quality and faults | NZQA bread (29112), cake/biscuit (29117) and pastry (29122) standards; King Arthur Baking professional references |
+| Hospitality (24) | Service roles, planning, menus, covers, orders, table service, stock and portions; food-control plans, hygiene, allergens and cleaning; espresso equipment, extraction and milk; service recovery and handover | NZQA service (26308, 14431), planning (27944) and espresso (17285) references; MPI food-safety guidance |
+
+The source register in the glossary links directly to all reviewed references and each term identifies a relevant location or topic. These sources support editorial vocabulary connections. They do not establish that ECE or Hospitality is a Technology curriculum strand, or that the glossary meets every requirement of an NZQA standard. Current assessment requirements and applicable food-control procedures should be checked in their original sources.
+
+ECE shared examples concern the design of resources and experiences; they do not frame children’s learning as a manufactured product. Subject references have their own filter label, separate from NZC/Phase 4/proposed Phase 5 connections. New definitions and examples are original teaching explanations.
 
 ## Definition review
 

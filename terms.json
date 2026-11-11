@@ -1,5 +1,29 @@
 [
   {
+    "term": "À la carte and table d’hôte",
+    "kind": "specialist",
+    "def": {
+      "junior": "Individually priced menu choices and a set-menu format.",
+      "senior": "Contrasting menu structures that affect choice, pricing, preparation, equipment and service planning; details depend on the establishment."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Compare a menu with separately priced dishes and a set menu."
+        ],
+        "senior": [
+          "Explain how each menu type changes production planning, table requirements and guest expectations."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalitystyles",
+        "section": "Outcomes 1–2: styles, menus and table settings"
+      }
+    ]
+  },
+  {
     "term": "Abstraction and black box",
     "def": {
       "junior": "Focusing on relevant features while hiding unnecessary detail.",
@@ -82,6 +106,30 @@
         "senior": [
           "Test complementary alerts for users with different hearing and vision needs."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Place play resources within children’s reach."
+        ],
+        "senior": [
+          "Review access and participation with whānau, including communication and physical barriers."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Make product information readable at the bakery display."
+        ],
+        "senior": [
+          "Test packaging and ingredient-information access with intended customers."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Provide an understandable menu and accessible service route."
+        ],
+        "senior": [
+          "Evaluate the whole guest experience with people who have different access needs."
+        ]
       }
     },
     "refs": [
@@ -96,6 +144,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -206,6 +266,30 @@
         "senior": [
           "Balance the appearance of the enclosure with clear controls, visible indicators and service access."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Compare how the colours and textures of a play resource invite exploration."
+        ],
+        "senior": [
+          "Consider sensory qualities alongside children’s preferences, identity and comfort."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Compare the crust colour and crumb of two loaves."
+        ],
+        "senior": [
+          "Use product criteria and sensory evidence to evaluate appearance and texture."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Compare two table presentations."
+        ],
+        "senior": [
+          "Justify presentation in relation to the menu, setting and intended guest experience."
+        ]
       }
     },
     "refs": [
@@ -220,6 +304,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -300,6 +396,30 @@
       {
         "id": "cs",
         "section": "Computational Thinking, pp. 7–8; Data and Systems, pp. 9–12; Software, pp. 13–14; AI, pp. 15–17"
+      }
+    ]
+  },
+  {
+    "term": "Allergen communication and cross-contact",
+    "kind": "specialist",
+    "def": {
+      "junior": "Sharing accurate allergen information and preventing unintended transfer.",
+      "senior": "Checking ingredients and handling practices, communicating requests clearly and using effective controls; do not guess or promise safety without reliable evidence."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Refer an allergen question to the responsible person and verified ingredient information."
+        ],
+        "senior": [
+          "Trace the request through preparation and service and verify the controls and information used."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "allergens",
+        "section": "Ingredient information, allergen communication and cross-contact"
       }
     ]
   },
@@ -434,6 +554,30 @@
         "senior": [
           "Specify the sensor threshold and examine the appearance and behaviour of the complete lighting system."
         ]
+      },
+      "ece": {
+        "junior": [
+          "A play resource can be easy to grip and have a textured surface."
+        ],
+        "senior": [
+          "Distinguish the resource’s physical features from its intended play function."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "A biscuit may be crisp, round and easy to pack."
+        ],
+        "senior": [
+          "Relate physical and functional attributes to production and consumer requirements."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "A menu can be easy to navigate and have clear type."
+        ],
+        "senior": [
+          "Evaluate both its visual features and how it supports ordering and dietary communication."
+        ]
       }
     },
     "kind": "shared",
@@ -449,9 +593,73 @@
       {
         "id": "p5overview",
         "section": "Design, development, testing and evaluation across subject pathways (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ],
     "revised": true
+  },
+  {
+    "term": "Baker’s percentage",
+    "kind": "specialist",
+    "def": {
+      "junior": "Expressing ingredient weights relative to the total flour weight.",
+      "senior": "A formula system in which total flour is 100% and each other ingredient is calculated against that flour mass, including flour in preferments when using total-formula accounting."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Calculate 300 g water against 500 g flour as 60%."
+        ],
+        "senior": [
+          "Scale the complete formula while preserving ingredient ratios and accounting for flour and water in a preferment."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingmath",
+        "section": "Ingredient percentages, scaling and total formula accounting"
+      }
+    ]
+  },
+  {
+    "term": "Baking faults and corrective action",
+    "kind": "specialist",
+    "def": {
+      "junior": "Recognising an unwanted product characteristic and investigating how to improve it.",
+      "senior": "Using formula, process and equipment evidence to distinguish possible causes and verify appropriate corrections rather than guessing from appearance alone."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Record uneven spread or a peaked cake top."
+        ],
+        "senior": [
+          "Compare controlled trials to test a proposed cause and document whether the correction meets product specifications."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
+      },
+      {
+        "id": "bakingpastry",
+        "section": "Outcomes 1–5: pastry science, short pastry, puff pastry, laminated and choux processes"
+      }
+    ]
   },
   {
     "term": "Binary, hexadecimal and encoding",
@@ -540,6 +748,30 @@
         "senior": [
           "Develop a brief that balances plant needs, available power, maintenance and the consequences of leaks."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Plan a resource for an identified play interest."
+        ],
+        "senior": [
+          "Define the purpose and context with kaiako and whānau before specifying the resource."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Plan a bread product for a school event."
+        ],
+        "senior": [
+          "Develop a brief covering consumers, batch size, production capacity and product requirements."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Plan a café service for a defined group of guests."
+        ],
+        "senior": [
+          "Develop a service brief that integrates menu, guest needs, resources and timing."
+        ]
       }
     },
     "kind": "shared",
@@ -555,6 +787,70 @@
       {
         "id": "p5overview",
         "section": "Design, development, testing and evaluation across subject pathways (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
+      }
+    ]
+  },
+  {
+    "term": "Briefing, teamwork and handover",
+    "kind": "specialist",
+    "def": {
+      "junior": "Sharing information so staff coordinate work before, during and after service.",
+      "senior": "Communicating responsibilities, menu changes, dietary requests, priorities and unresolved issues through timely operational briefings and handovers."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Share menu changes with the service team before opening."
+        ],
+        "senior": [
+          "Evaluate whether the briefing and handover ensure that critical information is understood and acted on."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityplanning",
+        "section": "Service planning, equipment, stock levels and functions"
+      },
+      {
+        "id": "hospitalityservice",
+        "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+      }
+    ]
+  },
+  {
+    "term": "Bulk fermentation",
+    "kind": "specialist",
+    "def": {
+      "junior": "Fermenting the mixed dough before dividing and shaping.",
+      "senior": "A development stage in which microbial activity and dough changes influence flavour, gas retention, handling and later production stages."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Observe the dough during its first fermentation stage."
+        ],
+        "senior": [
+          "Compare recorded dough condition and process variables rather than relying on elapsed time alone."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
       }
     ]
   },
@@ -607,6 +903,54 @@
       {
         "id": "textiles",
         "section": "Anthropometrics, pp. 7–8; Sustainability, p. 9; Material Properties, p. 11"
+      }
+    ]
+  },
+  {
+    "term": "Child agency and participation",
+    "kind": "specialist",
+    "def": {
+      "junior": "Children having meaningful influence over their experiences.",
+      "senior": "Recognising children’s preferences, decisions, communication and contribution to learning, planning and assessment, in context."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Let children choose how to represent an idea."
+        ],
+        "senior": [
+          "Examine whether children’s views actually shape decisions and whether non-verbal contributions are recognised."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
+      }
+    ]
+  },
+  {
+    "term": "Choux pastry and steam aeration",
+    "kind": "specialist",
+    "def": {
+      "junior": "A cooked paste that expands during baking, largely through steam.",
+      "senior": "A staged pastry process involving heating, controlled ingredient addition and baking to produce an expanded structure that sets around an internal cavity."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Identify the heating and egg-addition stages in a choux method."
+        ],
+        "senior": [
+          "Explain how paste condition, ingredient balance and baking influence expansion and structural stability."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingpastry",
+        "section": "Outcomes 1–5: pastry science, short pastry, puff pastry, laminated and choux processes"
       }
     ]
   },
@@ -707,6 +1051,34 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      }
+    ]
+  },
+  {
+    "term": "Cleaning and sanitising",
+    "kind": "specialist",
+    "def": {
+      "junior": "Removing dirt and reducing harmful microorganisms through different processes.",
+      "senior": "Cleaning removes residues and contamination; sanitising is applied to appropriately cleaned surfaces using a suitable validated process and product instructions."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Distinguish cleaning a surface from sanitising it."
+        ],
+        "senior": [
+          "Use the operation’s procedure and manufacturer guidance to explain sequence, suitability and verification."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "cleaning",
+        "section": "Cleaning and sanitising: different purposes and appropriate procedures"
+      },
+      {
+        "id": "foodsafety",
+        "section": "Training, hygiene, separation, cleaning and time/temperature control"
       }
     ]
   },
@@ -985,6 +1357,30 @@
         "senior": [
           "Evaluate whether sensor readings can identify people and minimise unnecessary collection."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Follow agreed permissions before photographing a child’s learning."
+        ],
+        "senior": [
+          "Use the setting’s consent and information-handling procedures and recognise children’s own communication and preferences."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Ask before recording identifiable tasting feedback."
+        ],
+        "senior": [
+          "Collect only necessary participant information and agree how it will be used and retained."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Keep guest booking details within authorised systems."
+        ],
+        "senior": [
+          "Limit collection and access to information needed for the agreed service purpose."
+        ]
       }
     },
     "refs": [
@@ -999,6 +1395,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -1057,6 +1465,30 @@
         "senior": [
           "Balance power capacity, size and cost against measured maximum operating demand."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Design a resource for the space and materials available."
+        ],
+        "senior": [
+          "Balance supervision, access, materials and maintenance requirements with the intended experience."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Plan a batch around available oven space."
+        ],
+        "senior": [
+          "Evaluate equipment capacity, ingredients, time and output requirements before production."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Plan service within the available seating and staffing."
+        ],
+        "senior": [
+          "Use capacity, equipment and timing evidence to set a manageable service scope."
+        ]
       }
     },
     "refs": [
@@ -1071,6 +1503,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -1133,6 +1577,30 @@
         "senior": [
           "Investigate environmental exposure, power availability and maintenance access when defining the operating context."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Consider the children, whānau and setting when planning a resource."
+        ],
+        "senior": [
+          "Relate the design context to local curriculum priorities and children’s identities and interests."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "A product for takeaway has different needs from one served immediately."
+        ],
+        "senior": [
+          "Evaluate how service, transport and storage contexts affect the bakery product and packaging."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Compare a school function with a restaurant dinner."
+        ],
+        "senior": [
+          "Analyse how purpose, guests, service style and resources change operational requirements."
+        ]
       }
     },
     "kind": "shared",
@@ -1148,6 +1616,18 @@
       {
         "id": "p5overview",
         "section": "Design, development, testing and evaluation across subject pathways (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ],
     "revised": true
@@ -1225,6 +1705,30 @@
     ]
   },
   {
+    "term": "Covers and service capacity",
+    "kind": "specialist",
+    "def": {
+      "junior": "The guests or place settings planned or served in a dining operation.",
+      "senior": "A cover represents one guest setting or meal service; distinguish covers served over a period from simultaneous seating capacity."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Plan settings for twenty guests."
+        ],
+        "senior": [
+          "Use anticipated covers, turnover and resource limits to plan staffing and service readiness."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityplanning",
+        "section": "Service planning, equipment, stock levels and functions"
+      }
+    ]
+  },
+  {
     "term": "Crating and line weight",
     "def": {
       "junior": "Using simple enclosing forms and different line thicknesses to construct a clear drawing.",
@@ -1249,6 +1753,30 @@
       {
         "id": "spd",
         "section": "Context and Precedents, pp. 7–8; Design Thinking, pp. 9–10; Visual Communication, pp. 11–12"
+      }
+    ]
+  },
+  {
+    "term": "Creaming method",
+    "kind": "specialist",
+    "def": {
+      "junior": "Beating suitable fat and sugar together as a mixing stage.",
+      "senior": "A controlled mixing method that incorporates air and prepares the structure for subsequent ingredient addition in appropriate cake or biscuit formulations."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Observe changes in the mixture during creaming."
+        ],
+        "senior": [
+          "Relate ingredient condition, mixing and subsequent additions to volume, texture and possible faults."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
       }
     ]
   },
@@ -1346,6 +1874,34 @@
     "revised": true
   },
   {
+    "term": "Crumb and crust",
+    "kind": "specialist",
+    "def": {
+      "junior": "The inside structure of a baked product and its outer layer.",
+      "senior": "Product characteristics used to evaluate cell structure, texture, colour, thickness and degree of baking against the intended style."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Compare the inside and outside of two loaves."
+        ],
+        "senior": [
+          "Relate crumb and crust evidence to formula, development, proving and baking conditions."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
+      }
+    ]
+  },
+  {
     "term": "Cultural protocols",
     "def": {
       "junior": "Agreed and appropriate ways of working that respect a community’s values and knowledge.",
@@ -1400,6 +1956,30 @@
         "senior": [
           "Agree appropriate data collection and use before installing sensors in a culturally significant setting."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Ask whānau about practices important to their child."
+        ],
+        "senior": [
+          "Develop appropriate approaches with relevant whānau and knowledge holders rather than assuming one practice fits everyone."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Discuss appropriate use of a culturally significant product or story."
+        ],
+        "senior": [
+          "Agree sourcing, representation and acknowledgement with relevant knowledge holders."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Ask about appropriate hosting and food practices."
+        ],
+        "senior": [
+          "Use consultation to plan respectful service and accurate communication about cultural requirements."
+        ]
       }
     },
     "refs": [
@@ -1414,6 +1994,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -1514,6 +2106,30 @@
       {
         "id": "food",
         "section": "Food Fundamentals, pp. 8–9; Food Innovation, pp. 12–14"
+      }
+    ]
+  },
+  {
+    "term": "Depositing, depanning and cooling",
+    "kind": "specialist",
+    "def": {
+      "junior": "Placing mixture for baking, removing baked items from their forms and cooling them appropriately.",
+      "senior": "Production stages that influence portion consistency, product integrity, finish and readiness for subsequent handling or storage."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Deposit equal portions and remove them using the approved method."
+        ],
+        "senior": [
+          "Evaluate portion mass, release timing and cooling arrangements against product quality and applicable procedures."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
       }
     ]
   },
@@ -1682,6 +2298,34 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      }
+    ]
+  },
+  {
+    "term": "Dietary requirements and preferences",
+    "kind": "specialist",
+    "def": {
+      "junior": "Food-related needs or choices that must be understood accurately.",
+      "senior": "Distinguishing allergy, intolerance, cultural or religious requirements and preferences, then confirming what the operation can appropriately provide."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Clarify the guest’s request instead of assuming what it means."
+        ],
+        "senior": [
+          "Communicate the specific requirement and available options accurately without treating different needs as interchangeable."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityservice",
+        "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+      },
+      {
+        "id": "allergens",
+        "section": "Ingredient information, allergen communication and cross-contact"
       }
     ]
   },
@@ -1882,6 +2526,82 @@
     ]
   },
   {
+    "term": "Dividing, moulding and bench rest",
+    "kind": "specialist",
+    "def": {
+      "junior": "Portioning dough, shaping it and allowing it to relax between handling stages.",
+      "senior": "Coordinated handling operations that support consistent mass, shape, structure and readiness for subsequent processing."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Divide rolls to the required mass before shaping."
+        ],
+        "senior": [
+          "Evaluate how dividing accuracy and rest conditions affect moulding consistency and finished volume."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      }
+    ]
+  },
+  {
+    "term": "Dockets, POS and service handovers",
+    "kind": "specialist",
+    "def": {
+      "junior": "Records and messages that carry order information between staff.",
+      "senior": "Using a point-of-sale or other order system and clear handovers to maintain accuracy, sequence, traceability and timely service."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Match the order docket to the correct table."
+        ],
+        "senior": [
+          "Check how modifiers and dietary instructions are transmitted, acknowledged and verified before service."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityservice",
+        "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Service planning, equipment, stock levels and functions"
+      }
+    ]
+  },
+  {
+    "term": "Dough temperature",
+    "kind": "specialist",
+    "def": {
+      "junior": "The measured temperature of dough during production.",
+      "senior": "A process variable that influences fermentation and dough behaviour; the target and method of control depend on the formula and production specifications."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Record dough temperature after mixing."
+        ],
+        "senior": [
+          "Use ingredient, room and mixing observations to explain variation and select appropriate process adjustments."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      }
+    ]
+  },
+  {
     "term": "Drawing conventions",
     "def": {
       "junior": "The standard rules for making technical drawings — including line types, labels, scale, and how to show a 3D object in 2D.",
@@ -1978,6 +2698,30 @@
     ]
   },
   {
+    "term": "Elasticity and extensibility in dough",
+    "kind": "specialist",
+    "def": {
+      "junior": "A dough’s tendency to spring back and its ability to stretch.",
+      "senior": "Distinct rheological properties that influence shaping and gas-cell expansion; balance them against the intended product and process."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Stretch a dough sample and observe its return."
+        ],
+        "senior": [
+          "Explain how ingredient and process choices affect the balance between resistance and stretch during moulding."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      }
+    ]
+  },
+  {
     "term": "Emotional durability",
     "def": {
       "junior": "The value that encourages people to keep and care for an outcome.",
@@ -2026,6 +2770,54 @@
       {
         "id": "food",
         "section": "Food Fundamentals, pp. 8–9; Food Innovation, pp. 12–14"
+      }
+    ]
+  },
+  {
+    "term": "Espresso beverage styles",
+    "kind": "specialist",
+    "def": {
+      "junior": "Different drinks made from espresso and other specified ingredients.",
+      "senior": "Using an agreed beverage specification to distinguish coffee, water, milk, texture, size and presentation; conventions can vary between establishments."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Compare the establishment’s flat-white and cappuccino specifications."
+        ],
+        "senior": [
+          "Prepare and evaluate drinks against the stated recipes rather than assuming one universal ratio."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "barista",
+        "section": "Outcomes 1–3: equipment, beverages and milk aeration"
+      }
+    ]
+  },
+  {
+    "term": "Espresso extraction",
+    "kind": "specialist",
+    "def": {
+      "junior": "Passing pressurised water through prepared ground coffee to make espresso.",
+      "senior": "A controlled brewing process whose grind, dose, distribution, preparation, beverage yield and time interact to affect quality."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Identify the inputs and output of an espresso shot."
+        ],
+        "senior": [
+          "Record preparation variables and beverage characteristics, then make a justified adjustment within supervised procedures."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "barista",
+        "section": "Outcomes 1–3: equipment, beverages and milk aeration"
       }
     ]
   },
@@ -2084,6 +2876,30 @@
         "senior": [
           "Evaluate the purpose, consent and consequences of collecting sensor data about people."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Consider whose voice is heard in planning a play resource."
+        ],
+        "senior": [
+          "Review how design and documentation uphold children’s agency, dignity and inclusion."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Consider ingredient sourcing and product claims."
+        ],
+        "senior": [
+          "Evaluate sourcing, labour, waste and evidence behind claims made to customers."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Give accurate information about a menu item."
+        ],
+        "senior": [
+          "Consider fairness, inclusion, staff responsibilities and guest wellbeing in service decisions."
+        ]
       }
     },
     "refs": [
@@ -2098,6 +2914,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -2484,6 +3312,30 @@
     ]
   },
   {
+    "term": "Food Control Plan (FCP)",
+    "kind": "specialist",
+    "def": {
+      "junior": "A documented plan for managing food safety and suitability in a food business.",
+      "senior": "A set of applicable controls, responsibilities, records and checks used for the business’s activities; use the current plan relevant to that operation."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Locate the food-safety procedure for a planned task."
+        ],
+        "senior": [
+          "Explain how staff implement, record and verify the applicable controls rather than treating the plan as a generic checklist."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "foodplan",
+        "section": "Purpose and use of template food-control plans; follow the applicable current plan"
+      }
+    ]
+  },
+  {
     "term": "Food hazards and cross-contamination",
     "def": {
       "junior": "Things that may make food unsafe, including transfer of hazards between foods or surfaces.",
@@ -2536,6 +3388,34 @@
       {
         "id": "spd",
         "section": "Context and Precedents, pp. 7–8; Design Thinking, pp. 9–10; Visual Communication, pp. 11–12"
+      }
+    ]
+  },
+  {
+    "term": "Front of house and back of house",
+    "kind": "specialist",
+    "def": {
+      "junior": "Guest-facing service areas and the preparation/support areas behind them.",
+      "senior": "Coordinated operational roles and spaces whose communication, workflow and responsibilities shape the guest experience."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Identify who takes an order and who prepares it."
+        ],
+        "senior": [
+          "Map the handover between service and kitchen teams and identify where order information can be lost."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityservice",
+        "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Service planning, equipment, stock levels and functions"
       }
     ]
   },
@@ -2640,6 +3520,62 @@
     ]
   },
   {
+    "term": "Gelatinisation in baking",
+    "kind": "specialist",
+    "def": {
+      "junior": "Starch taking up water and changing as it is heated.",
+      "senior": "A heat-and-moisture-dependent change in starch that contributes to structure setting; its extent depends on ingredients and process conditions."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Observe a starch mixture thickening during an approved trial."
+        ],
+        "senior": [
+          "Explain how available water and competing ingredients influence starch behaviour and baked-product structure."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
+      },
+      {
+        "id": "bakingpastry",
+        "section": "Outcomes 1–5: pastry science, short pastry, puff pastry, laminated and choux processes"
+      }
+    ]
+  },
+  {
+    "term": "Gluten development",
+    "kind": "specialist",
+    "def": {
+      "junior": "Building a stretchy protein network in wheat-based dough.",
+      "senior": "Hydration and dough development organise gluten proteins into a network whose behaviour influences gas retention, handling and finished texture."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Compare a newly mixed dough with a developed dough."
+        ],
+        "senior": [
+          "Relate flour choice, water and mixing evidence to the required elasticity, extensibility and product structure."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      }
+    ]
+  },
+  {
     "term": "Grain, bias and drape",
     "def": {
       "junior": "Fabric direction and the way a fabric hangs or falls.",
@@ -2664,6 +3600,54 @@
       {
         "id": "textiles",
         "section": "Anthropometrics, pp. 7–8; Sustainability, p. 9; Material Properties, p. 11"
+      }
+    ]
+  },
+  {
+    "term": "Grinder, dose and tamp",
+    "kind": "specialist",
+    "def": {
+      "junior": "Grinding coffee, measuring the amount used and compressing it for brewing.",
+      "senior": "Coordinating grind size, dose, distribution and tamping to prepare a consistent coffee bed for the selected recipe and equipment."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Identify the grinder and tamper and weigh a dose."
+        ],
+        "senior": [
+          "Evaluate consistency in preparation before attributing extraction variation to one variable."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "barista",
+        "section": "Outcomes 1–3: equipment, beverages and milk aeration"
+      }
+    ]
+  },
+  {
+    "term": "Group head, portafilter and basket",
+    "kind": "specialist",
+    "def": {
+      "junior": "Espresso-machine parts that deliver water and hold ground coffee.",
+      "senior": "The group delivers brew water through the basket held in the portafilter; correct fit, condition and handling support consistent and safe operation."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Locate the group, portafilter and basket on the equipment."
+        ],
+        "senior": [
+          "Explain each part’s role and follow the equipment-specific preparation and care procedures under supervision."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "barista",
+        "section": "Outcomes 1–3: equipment, beverages and milk aeration"
       }
     ]
   },
@@ -2712,6 +3696,58 @@
       {
         "id": "spd",
         "section": "Context and Precedents, pp. 7–8; Design Thinking, pp. 9–10; Visual Communication, pp. 11–12"
+      }
+    ]
+  },
+  {
+    "term": "Hydration in baking",
+    "kind": "specialist",
+    "def": {
+      "junior": "The amount of water or specified liquid relative to flour in a dough.",
+      "senior": "A stated formula ratio used to describe dough consistency; calculation conventions should be recorded, and fat is not treated as water."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Compare the handling of two doughs with different water-to-flour ratios."
+        ],
+        "senior": [
+          "State which liquids are included, account for preferment water and evaluate the effect on handling and structure."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingmath",
+        "section": "Ingredient percentages, scaling and total formula accounting"
+      }
+    ]
+  },
+  {
+    "term": "Inclusive ECE practice",
+    "kind": "specialist",
+    "def": {
+      "junior": "Removing barriers so every child can belong, participate and learn.",
+      "senior": "Designing responsive environments and relationships that value identity, language, culture and diverse capabilities, with appropriate collaborative support."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Adapt a resource so a child can join the play."
+        ],
+        "senior": [
+          "Evaluate environmental and interaction barriers with whānau and relevant support people, then review participation."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
       }
     ]
   },
@@ -2984,6 +4020,30 @@
     ]
   },
   {
+    "term": "Intentional teaching in ECE",
+    "kind": "specialist",
+    "def": {
+      "junior": "Making thoughtful decisions about how to support learning.",
+      "senior": "Using professional knowledge, observation and contextual understanding to choose purposeful responses, interactions and environments."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Ask a question that helps a child explore their own idea."
+        ],
+        "senior": [
+          "Explain why a timely prompt, model, pause or change of material was appropriate for the observed learning."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
+      }
+    ]
+  },
+  {
     "term": "Interactive, information and time-based media",
     "def": {
       "junior": "Media organised around user action, information access or unfolding time.",
@@ -3062,6 +4122,30 @@
         "senior": [
           "Compare repeated performance data before and after the sensing change."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Adjust a designed resource in response to observations."
+        ],
+        "senior": [
+          "Review the resource with kaiako and whānau and evaluate how changes support participation."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Adjust a formula after comparing trial results."
+        ],
+        "senior": [
+          "Change and record selected variables, then verify the effect on the required product characteristics."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Improve a service layout after a rehearsal."
+        ],
+        "senior": [
+          "Connect each change to workflow evidence and review its effect during a subsequent service."
+        ]
       }
     },
     "refs": [
@@ -3076,6 +4160,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -3204,6 +4300,78 @@
     ]
   },
   {
+    "term": "Kneading and dough folding",
+    "kind": "specialist",
+    "def": {
+      "junior": "Working dough to develop and organise its structure.",
+      "senior": "Mechanical development methods selected for the dough and process, balancing strength, gas retention, handling and temperature effects."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Observe how kneading changes dough handling."
+        ],
+        "senior": [
+          "Compare kneading and fold schedules using dough condition and finished-product evidence."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      }
+    ]
+  },
+  {
+    "term": "Kotahitanga — holistic development",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki principle that considers the whole child.",
+      "senior": "Recognising interconnected dimensions of learning and development rather than treating physical, emotional, spiritual, intellectual and social experiences as separate."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Notice movement, language, feelings and relationships during play."
+        ],
+        "senior": [
+          "Interpret an observation in relation to the whole child, their context and interconnected learning."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      }
+    ]
+  },
+  {
+    "term": "Lamination in pastry",
+    "kind": "specialist",
+    "def": {
+      "junior": "Making layers of dough and fat through rolling and folding.",
+      "senior": "A controlled layering process in which turns, rest, temperature and fat distribution influence separation, lift and finished texture."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Identify distinct layers in a pastry sample."
+        ],
+        "senior": [
+          "Evaluate how the folding schedule and handling preserve layers and affect the intended pastry characteristics."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingpastry",
+        "section": "Outcomes 1–5: pastry science, short pastry, puff pastry, laminated and choux processes"
+      }
+    ]
+  },
+  {
     "term": "Lay plan and pattern symbols",
     "def": {
       "junior": "An arrangement of pattern pieces on fabric using markings that guide placement and construction.",
@@ -3224,6 +4392,106 @@
       {
         "id": "textiles",
         "section": "Anthropometrics, pp. 7–8; Sustainability, p. 9; Material Properties, p. 11"
+      }
+    ]
+  },
+  {
+    "term": "Learner identity",
+    "kind": "specialist",
+    "def": {
+      "junior": "How a child sees themselves as someone who learns.",
+      "senior": "A changing sense of capability, belonging and participation as a learner, shaped by experiences, relationships and how others recognise learning."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Notice a child saying they can solve a problem."
+        ],
+        "senior": [
+          "Consider how feedback and documentation strengthen the child’s view of themselves as capable and valued."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceglossary",
+        "section": "Disciplinary terminology and teaching connections"
+      }
+    ]
+  },
+  {
+    "term": "Learning dispositions",
+    "kind": "specialist",
+    "def": {
+      "junior": "Ways of approaching learning, such as curiosity and persistence.",
+      "senior": "Patterns of inclination, sensitivity and capability that shape how learners engage, participate and respond across situations."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Notice a child trying another approach when a tower falls."
+        ],
+        "senior": [
+          "Document how persistence develops across contexts and consider what relationships and opportunities support it."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "ecelearning",
+        "section": "Learning outcomes, dispositions and working theories"
+      }
+    ]
+  },
+  {
+    "term": "Learning stories and portfolios",
+    "kind": "specialist",
+    "def": {
+      "junior": "Narrative records and collections that make learning visible.",
+      "senior": "Documenting significant learning with interpretation, context and possible responses, incorporating children’s and whānau perspectives over time."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Record a short story about a child’s problem solving."
+        ],
+        "senior": [
+          "Relate documented evidence to valued learning and revisit it with the child and whānau to inform next steps."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
+      }
+    ]
+  },
+  {
+    "term": "Leavening and aeration",
+    "kind": "specialist",
+    "def": {
+      "junior": "Creating or adding gas that helps a baked product rise or become lighter.",
+      "senior": "Mechanical, chemical, biological and physical mechanisms introduce or expand gases that influence product volume and structure."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Compare whisked foam with yeast-raised dough."
+        ],
+        "senior": [
+          "Explain which aeration mechanisms operate in the selected formula and how the structure retains expanding gases."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
+      },
+      {
+        "id": "bakingpastry",
+        "section": "Outcomes 1–5: pastry science, short pastry, puff pastry, laminated and choux processes"
       }
     ]
   },
@@ -3328,6 +4596,34 @@
     ]
   },
   {
+    "term": "Local curriculum in ECE",
+    "kind": "specialist",
+    "def": {
+      "junior": "The learning priorities and experiences woven for a particular early childhood community.",
+      "senior": "Interpreting Te Whāriki through the aspirations, identities, interests and valued learning of children, whānau, kaiako and the local community."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Connect a programme with children’s interest in a nearby place."
+        ],
+        "senior": [
+          "Justify priorities through dialogue, assessment evidence and local knowledge rather than a fixed activity list."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceglossary",
+        "section": "Disciplinary terminology and teaching connections"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
+      }
+    ]
+  },
+  {
     "term": "Machine learning, training and inference",
     "def": {
       "junior": "Learning patterns from data and using a trained model to generate an output.",
@@ -3348,6 +4644,126 @@
       {
         "id": "cs",
         "section": "Computational Thinking, pp. 7–8; Data and Systems, pp. 9–12; Software, pp. 13–14; AI, pp. 15–17"
+      }
+    ]
+  },
+  {
+    "term": "Mana Aotūroa — exploration",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki strand about exploring and making sense of the world.",
+      "senior": "Supporting play, investigation, movement, problem solving and evolving understandings through active engagement with people, places and materials."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Offer materials that children can investigate in different ways."
+        ],
+        "senior": [
+          "Observe how children test ideas, then extend inquiry without replacing their own problem solving."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      }
+    ]
+  },
+  {
+    "term": "Mana Atua — wellbeing",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki strand concerned with children’s wellbeing.",
+      "senior": "A curriculum focus on health, emotional wellbeing and protection from harm, understood through relationships, identity and everyday experiences."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Plan a predictable routine that helps a child feel secure."
+        ],
+        "senior": [
+          "Evaluate how environments and interactions support emotional wellbeing and safe participation."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      }
+    ]
+  },
+  {
+    "term": "Mana Reo — communication",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki strand recognising many ways of communicating.",
+      "senior": "Supporting language, symbols, expression and meaning-making, including home languages, te reo Māori and communication beyond speech."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Respond to a child’s gestures as well as their words."
+        ],
+        "senior": [
+          "Provide varied expressive and communication opportunities that build on each child’s language and identity."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      }
+    ]
+  },
+  {
+    "term": "Mana Tangata — contribution",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki strand about equitable opportunities to participate and contribute.",
+      "senior": "Valuing children’s strengths and enabling learning with and alongside others while addressing barriers to participation."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Make space for different children to contribute to group play."
+        ],
+        "senior": [
+          "Evaluate participation patterns and adapt experiences so children’s strengths and contributions are recognised."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      }
+    ]
+  },
+  {
+    "term": "Mana Whenua — belonging",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki strand about children and whānau feeling they belong.",
+      "senior": "Supporting connections to people and place, familiarity with routines and a secure sense that children’s identities and contributions matter."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Include familiar names, languages and family connections in the setting."
+        ],
+        "senior": [
+          "Investigate whose identities are represented and how whānau contribute to a sense of belonging."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
       }
     ]
   },
@@ -3529,6 +4945,30 @@
     ]
   },
   {
+    "term": "Milk texturing and microfoam",
+    "kind": "specialist",
+    "def": {
+      "junior": "Introducing air and mixing milk with steam to create a suitable texture.",
+      "senior": "Managing aeration and circulation for the chosen beverage while following appropriate equipment, hygiene and temperature-control procedures."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Observe the difference between coarse bubbles and a smooth texture."
+        ],
+        "senior": [
+          "Compare texture and consistency across approved milk types and explain the adjustments made within supervised practice."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "barista",
+        "section": "Outcomes 1–3: equipment, beverages and milk aeration"
+      }
+    ]
+  },
+  {
     "term": "Mind map",
     "def": {
       "junior": "A diagram that starts with one central idea and branches out into related ideas — used to brainstorm and organise your thinking at the start of a project.",
@@ -3597,6 +5037,54 @@
       {
         "id": "p5overview",
         "section": "Design, development, testing and evaluation across subject pathways (teaching connection)"
+      }
+    ]
+  },
+  {
+    "term": "Mise en place",
+    "kind": "specialist",
+    "def": {
+      "junior": "Preparing and organising what is needed before service.",
+      "senior": "Planning and completing station readiness, including equipment, ingredients, service items and information, to support efficient and consistent work."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Set up the service station before guests arrive."
+        ],
+        "senior": [
+          "Justify a readiness checklist using the menu, expected demand, dietary information and service sequence."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityplanning",
+        "section": "Service planning, equipment, stock levels and functions"
+      }
+    ]
+  },
+  {
+    "term": "Muffin and all-in mixing methods",
+    "kind": "specialist",
+    "def": {
+      "junior": "Different ways of combining ingredients for cakes and similar products.",
+      "senior": "The muffin method combines separately prepared wet and dry ingredients; an all-in method combines the specified ingredients in one planned mixing process."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Identify the mixing sequence in a muffin recipe."
+        ],
+        "senior": [
+          "Explain how the chosen method and mixing extent influence consistency, texture and faults."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
       }
     ]
   },
@@ -3803,6 +5291,30 @@
     ]
   },
   {
+    "term": "Ngā Hononga — relationships",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki principle recognising learning through relationships.",
+      "senior": "Learning through responsive, reciprocal relationships with people, places and things, understood within the child’s wider context."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Notice how a child learns alongside a familiar person."
+        ],
+        "senior": [
+          "Explain how continuity, trust and responsive interactions support exploration and learning."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      }
+    ]
+  },
+  {
     "term": "Noise, filtering and sampling",
     "def": {
       "junior": "Unwanted variation, ways to reduce it and how often readings are taken.",
@@ -3823,6 +5335,30 @@
       {
         "id": "electronics",
         "section": "Sensing, p. 8; Actuation, p. 9; Control, p. 10; Integration and Testing, pp. 11–13"
+      }
+    ]
+  },
+  {
+    "term": "Noticing, recognising and responding",
+    "kind": "specialist",
+    "def": {
+      "junior": "Seeing learning, understanding its significance and deciding how to support it.",
+      "senior": "An assessment-for-learning process that can include recording and revisiting, with interpretation informed by the child, whānau and curriculum."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Notice an interest in ramps and offer a chance to explore it further."
+        ],
+        "senior": [
+          "Distinguish observation from interpretation, justify the response and revisit whether it extended the learning."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
       }
     ]
   },
@@ -4005,6 +5541,30 @@
     ]
   },
   {
+    "term": "Order taking and confirmation",
+    "kind": "specialist",
+    "def": {
+      "junior": "Recording a guest’s request and checking it is understood correctly.",
+      "senior": "Accurately communicating menu choices, variations, dietary information and timing requirements through the agreed ordering process."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Repeat an order to check the details."
+        ],
+        "senior": [
+          "Trace a special request from guest confirmation to kitchen acknowledgement and final service check."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityservice",
+        "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+      }
+    ]
+  },
+  {
     "term": "Orthographic projection, plans and elevations",
     "def": {
       "junior": "Coordinated 2D views that describe a 3D design.",
@@ -4029,6 +5589,30 @@
       {
         "id": "spd",
         "section": "Context and Precedents, pp. 7–8; Design Thinking, pp. 9–10; Visual Communication, pp. 11–12"
+      }
+    ]
+  },
+  {
+    "term": "Par stock and replenishment",
+    "kind": "specialist",
+    "def": {
+      "junior": "A planned stock level and the process of restoring supplies.",
+      "senior": "Setting service stock against expected demand, storage and quality constraints, then monitoring and replenishing through agreed procedures."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Check glasses and service items before opening."
+        ],
+        "senior": [
+          "Use anticipated covers and consumption evidence to justify stock readiness without unnecessary waste."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityplanning",
+        "section": "Service planning, equipment, stock levels and functions"
       }
     ]
   },
@@ -4158,6 +5742,30 @@
       {
         "id": "p5overview",
         "section": "Design, development, testing and evaluation across subject pathways (teaching connection)"
+      }
+    ]
+  },
+  {
+    "term": "Personal hygiene and hygienic practice",
+    "kind": "specialist",
+    "def": {
+      "junior": "Working in ways that reduce contamination from people and their activities.",
+      "senior": "Applying appropriate hand hygiene, clothing, behaviour, health reporting and task procedures to protect food and service areas."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Identify when the task requires handwashing."
+        ],
+        "senior": [
+          "Explain how the team prevents contamination across task changes using the applicable food-safety procedures."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "foodsafety",
+        "section": "Training, hygiene, separation, cleaning and time/temperature control"
       }
     ]
   },
@@ -4345,6 +5953,82 @@
     ]
   },
   {
+    "term": "Plated, buffet and family service",
+    "kind": "specialist",
+    "def": {
+      "junior": "Different ways of presenting and distributing food to guests.",
+      "senior": "Service styles with different guest interactions, equipment, portioning, replenishment and handling requirements."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Identify how guests receive food in three service styles."
+        ],
+        "senior": [
+          "Compare operational requirements and guest experience, including the applicable food-safety controls."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalitystyles",
+        "section": "Outcomes 1–2: styles, menus and table settings"
+      }
+    ]
+  },
+  {
+    "term": "Play-based pedagogy",
+    "kind": "specialist",
+    "def": {
+      "junior": "Supporting learning through purposeful opportunities for play.",
+      "senior": "Making informed teaching and environmental decisions that recognise play as a context for inquiry, imagination, relationships and learning."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Provide open-ended materials for children’s own play ideas."
+        ],
+        "senior": [
+          "Explain how the environment and kaiako responses extend learning while preserving children’s agency."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "ecelearning",
+        "section": "Learning outcomes, dispositions and working theories"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
+      }
+    ]
+  },
+  {
+    "term": "Portion control and standard recipes",
+    "kind": "specialist",
+    "def": {
+      "junior": "Using agreed quantities and methods for consistent service.",
+      "senior": "Standardising portions and preparation supports predictable quality, yield, cost and communication while accommodating authorised variations."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Use the specified serving tool for consistent portions."
+        ],
+        "senior": [
+          "Compare actual portion yield with the standard and investigate variation in production or service."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityplanning",
+        "section": "Service planning, equipment, stock levels and functions"
+      }
+    ]
+  },
+  {
     "term": "Precedent and design culture",
     "def": {
       "junior": "Existing designs and influences that help us understand design possibilities.",
@@ -4365,6 +6049,34 @@
       {
         "id": "spd",
         "section": "Context and Precedents, pp. 7–8; Design Thinking, pp. 9–10; Visual Communication, pp. 11–12"
+      }
+    ]
+  },
+  {
+    "term": "Preferment and sourdough starter",
+    "kind": "specialist",
+    "def": {
+      "junior": "A portion of fermented flour and water used in bread making.",
+      "senior": "A preferment develops before the final dough; sourdough cultures contain interacting microorganisms maintained through a defined feeding and production process."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Identify the flour and water contributed by a starter."
+        ],
+        "senior": [
+          "Explain the preferment’s contribution to the total formula and compare its maturity and effects on dough performance."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingpreferment",
+        "section": "Preferments and sourdough cultures"
+      },
+      {
+        "id": "bakingmath",
+        "section": "Ingredient percentages, scaling and total formula accounting"
       }
     ]
   },
@@ -4465,6 +6177,30 @@
     ]
   },
   {
+    "term": "Proving (proofing)",
+    "kind": "specialist",
+    "def": {
+      "junior": "Allowing shaped yeast-raised products to develop before baking.",
+      "senior": "A controlled fermentation stage assessed against product and process requirements, considering dough condition and appropriate environmental controls."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Observe shaped rolls as they prove."
+        ],
+        "senior": [
+          "Use the recipe and production specifications to assess readiness and explain under- or over-proving effects."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      }
+    ]
+  },
+  {
     "term": "Quality control and quality assurance",
     "def": {
       "junior": "Checking quality and planning processes that help quality stay consistent.",
@@ -4519,6 +6255,30 @@
         "senior": [
           "Use staged inspections, calibration records and repeated integration tests to support reliability."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Check a play resource for damage before use."
+        ],
+        "senior": [
+          "Use appropriate inspection and maintenance processes for resources; avoid applying product-conformance language to children."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Check product mass and appearance during a batch."
+        ],
+        "senior": [
+          "Use documented production checkpoints and investigate non-conforming products."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Check orders and service items before delivery."
+        ],
+        "senior": [
+          "Use coordinated readiness and service checks to support consistent quality and accurate communication."
+        ]
       }
     },
     "refs": [
@@ -4533,6 +6293,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -4605,6 +6377,30 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      }
+    ]
+  },
+  {
+    "term": "Reflective practice and internal evaluation",
+    "kind": "specialist",
+    "def": {
+      "junior": "Examining practice to understand what works and what needs to change.",
+      "senior": "Systematic inquiry into how the setting supports learning and participation, using evidence and the perspectives of children, whānau and kaiako."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Discuss who is participating in a learning space."
+        ],
+        "senior": [
+          "Evaluate a change against its intended learning purpose and examine who benefited and who still faces barriers."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
       }
     ]
   },
@@ -4859,6 +6655,30 @@
         "senior": [
           "Allow resourcing and schedule contingencies for interface failures and repeated verification."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Plan materials and review times for making a resource."
+        ],
+        "senior": [
+          "Coordinate consultation, design, making and review with the setting’s relevant procedures."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Plan mixing, proving, baking and cooling stages."
+        ],
+        "senior": [
+          "Coordinate batch timing and equipment capacity while allowing for process variation."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Plan preparation, setup, briefing, service and pack-down."
+        ],
+        "senior": [
+          "Manage dependencies between kitchen and front-of-house teams and review progress against the function brief."
+        ]
       }
     },
     "refs": [
@@ -4873,6 +6693,70 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
+      }
+    ]
+  },
+  {
+    "term": "Responsive and reciprocal practice",
+    "kind": "specialist",
+    "def": {
+      "junior": "Noticing and responding to children while learning with them.",
+      "senior": "Interactions in which kaiako recognise children’s signals, ideas and contributions, respond sensitively and allow mutual influence."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Follow a child’s interest during a shared conversation."
+        ],
+        "senior": [
+          "Analyse how turn-taking and responsive interaction build understanding rather than directing every step."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
+      }
+    ]
+  },
+  {
+    "term": "Retarding dough",
+    "kind": "specialist",
+    "def": {
+      "junior": "Slowing fermentation through controlled cooling.",
+      "senior": "Managing fermentation and production scheduling through a planned chilled process, with product quality and applicable food-safety controls."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Compare a scheduled chilled dough process with a same-day process."
+        ],
+        "senior": [
+          "Evaluate how the approved retard schedule affects timing, dough condition and finished-product characteristics."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
       }
     ]
   },
@@ -4997,6 +6881,34 @@
       {
         "id": "spd",
         "section": "Context and Precedents, pp. 7–8; Design Thinking, pp. 9–10; Visual Communication, pp. 11–12"
+      }
+    ]
+  },
+  {
+    "term": "Scaling ingredients and recipe yield",
+    "kind": "specialist",
+    "def": {
+      "junior": "Weighing ingredients and adjusting a recipe for the quantity needed.",
+      "senior": "Calculating consistent ingredient quantities from the required batch or portion yield while maintaining the formula’s proportions."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Double a recipe by weighing every ingredient accurately."
+        ],
+        "senior": [
+          "Calculate a conversion factor from required output and verify portion yield and production losses."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingmath",
+        "section": "Ingredient percentages, scaling and total formula accounting"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
       }
     ]
   },
@@ -5133,6 +7045,30 @@
     ]
   },
   {
+    "term": "Sequence of service",
+    "kind": "specialist",
+    "def": {
+      "junior": "The planned order of steps in serving guests.",
+      "senior": "A coordinated service process adapted to the establishment, style, guest requirements and timing, from welcome to farewell."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Describe the steps from seating guests to clearing tables."
+        ],
+        "senior": [
+          "Evaluate whether the sequence supports accurate orders, communication, timely service and guest comfort."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityservice",
+        "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+      }
+    ]
+  },
+  {
     "term": "Sequence, selection and iteration",
     "def": {
       "junior": "Instructions in order, choices based on conditions and repeated instructions.",
@@ -5161,6 +7097,30 @@
     ]
   },
   {
+    "term": "Service recovery and guest feedback",
+    "kind": "specialist",
+    "def": {
+      "junior": "Responding appropriately when an experience has not met expectations.",
+      "senior": "Listening, checking the issue, acting within authority, communicating a suitable response and following up without compromising safety or accuracy."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Acknowledge a delayed order and check the agreed response."
+        ],
+        "senior": [
+          "Use guest feedback and the service record to resolve the issue and identify a process improvement."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalityservice",
+        "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+      }
+    ]
+  },
+  {
     "term": "Shelf life",
     "def": {
       "junior": "How long food remains suitable under stated storage conditions.",
@@ -5181,6 +7141,30 @@
       {
         "id": "food",
         "section": "Food Fundamentals, pp. 8–9; Food Innovation, pp. 12–14"
+      }
+    ]
+  },
+  {
+    "term": "Short pastry and rubbing in",
+    "kind": "specialist",
+    "def": {
+      "junior": "A tender pastry type and a method of distributing fat through flour.",
+      "senior": "Formula and handling limit unwanted gluten development; rubbing in and creaming create different structures suited to specified short-pastry products."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Compare rubbing-in and creaming sequences."
+        ],
+        "senior": [
+          "Relate fat distribution, ingredient balance and mixing to tenderness, shape and mouthfeel."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingpastry",
+        "section": "Outcomes 1–5: pastry science, short pastry, puff pastry, laminated and choux processes"
       }
     ]
   },
@@ -5364,6 +7348,30 @@
         "senior": [
           "Specify observable stop behaviour, response time and test conditions, then verify these with recorded evidence."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Set checkable requirements for a play resource’s size and cleaning."
+        ],
+        "senior": [
+          "Specify the designed resource and conditions of use; do not turn children’s learning into fixed product targets."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Set product criteria for mass, shape and texture."
+        ],
+        "senior": [
+          "Define measurable quality and production requirements and the methods used to evaluate them."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Define service requirements for the event."
+        ],
+        "senior": [
+          "Use checkable criteria for readiness, order accuracy, presentation and the agreed guest experience."
+        ]
       }
     },
     "kind": "shared",
@@ -5379,6 +7387,18 @@
       {
         "id": "p5overview",
         "section": "Design, development, testing and evaluation across subject pathways (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -5446,6 +7466,30 @@
         "senior": [
           "Reconcile the needs of users, maintainers and people affected by water use or system failure."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Children, whānau and kaiako may all be affected by a resource."
+        ],
+        "senior": [
+          "Seek relevant perspectives while recognising different roles and children’s agency."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Bakers, customers and event organisers have interests in the product."
+        ],
+        "senior": [
+          "Reconcile consumer feedback with production, safety and resource requirements."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Guests, kitchen staff and service staff affect a function."
+        ],
+        "senior": [
+          "Map responsibilities and dependencies so feedback informs feasible service decisions."
+        ]
       }
     },
     "kind": "shared",
@@ -5461,6 +7505,46 @@
       {
         "id": "p5overview",
         "section": "Design, development, testing and evaluation across subject pathways (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
+      }
+    ]
+  },
+  {
+    "term": "Staling and retrogradation",
+    "kind": "specialist",
+    "def": {
+      "junior": "Quality changes as baked products age, including changes in starch organisation.",
+      "senior": "Staling includes structural and moisture changes; starch retrogradation contributes to firming and is distinct from a product becoming microbiologically unsafe."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Compare the texture of fresh and stored bread samples."
+        ],
+        "senior": [
+          "Use controlled storage observations to distinguish texture changes from separate food-safety and shelf-life judgements."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingbread",
+        "section": "Outcomes 1–2: bread science and production terminology"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
       }
     ]
   },
@@ -5577,6 +7661,30 @@
         "senior": [
           "Evaluate lifetime energy use, repair access and component recovery alongside water savings."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Repair a suitable play resource rather than replacing it."
+        ],
+        "senior": [
+          "Consider material sourcing, maintenance, useful life and the local community’s values."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Plan batch sizes to reduce unsold product."
+        ],
+        "senior": [
+          "Evaluate yield, energy, packaging and avoidable waste without compromising appropriate safety controls."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Plan stock and portions to reduce avoidable waste."
+        ],
+        "senior": [
+          "Use demand and waste evidence to evaluate resource use across a service."
+        ]
       }
     },
     "kind": "shared",
@@ -5592,6 +7700,18 @@
       {
         "id": "p5overview",
         "section": "Design, development, testing and evaluation across subject pathways (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ],
     "revised": true
@@ -5665,6 +7785,58 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      }
+    ]
+  },
+  {
+    "term": "Table setting and service equipment",
+    "kind": "specialist",
+    "def": {
+      "junior": "Arranging the items needed for the chosen menu and service style.",
+      "senior": "Selecting and positioning suitable clean tableware, glassware, cutlery, linen and service items according to operational requirements."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Choose the cutlery needed for a planned menu."
+        ],
+        "senior": [
+          "Justify the setting and equipment against the menu, service style, guest needs and safe handling."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "hospitalitystyles",
+        "section": "Outcomes 1–2: styles, menus and table settings"
+      },
+      {
+        "id": "hospitalityservice",
+        "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+      }
+    ]
+  },
+  {
+    "term": "Te Whāriki",
+    "kind": "specialist",
+    "def": {
+      "junior": "Aotearoa New Zealand’s early childhood curriculum framework.",
+      "senior": "A bicultural framework in which principles, strands, goals and learning outcomes are woven locally with children, whānau and communities."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Identify the principles and strands that connect with a play experience."
+        ],
+        "senior": [
+          "Explain how a local curriculum weaves the framework with whānau aspirations, children’s identities and valued learning."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
       }
     ]
   },
@@ -6132,6 +8304,30 @@
         "senior": [
           "Use controlled repeated tests of components, interfaces and the integrated system."
         ]
+      },
+      "ece": {
+        "junior": [
+          "Trial a resource with responsible kaiako before appropriate use."
+        ],
+        "senior": [
+          "Evaluate the resource and environment through approved processes, respecting children’s participation and wellbeing."
+        ]
+      },
+      "baking": {
+        "junior": [
+          "Compare trial batches under consistent conditions."
+        ],
+        "senior": [
+          "Record formula and process changes and use product evidence to justify a refinement."
+        ]
+      },
+      "hospitality": {
+        "junior": [
+          "Rehearse the service sequence before an event."
+        ],
+        "senior": [
+          "Use observed order accuracy, workflow and guest feedback to refine the operation."
+        ]
       }
     },
     "refs": [
@@ -6146,6 +8342,18 @@
       {
         "id": "p5overview",
         "section": "Cross-subject design and responsible practice (teaching connection)"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Editorial application to the design of ECE resources and experiences; not a Te Whāriki product-assessment requirement"
+      },
+      {
+        "id": "bakingcake",
+        "section": "Editorial application to bakery product development and production"
+      },
+      {
+        "id": "hospitalityplanning",
+        "section": "Editorial application to service planning and evaluation"
       }
     ]
   },
@@ -6170,6 +8378,34 @@
       {
         "id": "textiles",
         "section": "Anthropometrics, pp. 7–8; Sustainability, p. 9; Material Properties, p. 11"
+      }
+    ]
+  },
+  {
+    "term": "Time and temperature control",
+    "kind": "specialist",
+    "def": {
+      "junior": "Managing how long food spends under specified temperature conditions.",
+      "senior": "Applying the relevant validated food-safety controls for receiving, preparation, storage, cooking and service, with suitable monitoring and corrective action."
+    },
+    "examples": {
+      "hospitality": {
+        "junior": [
+          "Find the approved monitoring procedure for a service task."
+        ],
+        "senior": [
+          "Explain which limits and records apply to the operation and what staff must do when a check fails."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "foodsafety",
+        "section": "Training, hygiene, separation, cleaning and time/temperature control"
+      },
+      {
+        "id": "foodplan",
+        "section": "Purpose and use of template food-control plans; follow the applicable current plan"
       }
     ]
   },
@@ -6422,6 +8658,30 @@
       }
     ],
     "revised": true
+  },
+  {
+    "term": "Transitions and continuity in ECE",
+    "kind": "specialist",
+    "def": {
+      "junior": "Supporting connections as children move between experiences or settings.",
+      "senior": "Building continuity in identity, relationships, language and valued learning across home, early learning, school and kura."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Use a familiar story or relationship to support a transition."
+        ],
+        "senior": [
+          "Work with whānau and receiving educators to share meaningful learning information through agreed processes."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "ecetransitions",
+        "section": "Continuity and connections across learning pathways"
+      }
+    ]
   },
   {
     "term": "Typography, hierarchy and composition",
@@ -6716,6 +8976,106 @@
     ]
   },
   {
+    "term": "Whakamana — empowerment",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki principle about strengthening children’s mana and capability.",
+      "senior": "The principle that curriculum should uphold and enhance each child’s agency, confidence and capacity to learn and contribute."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Give a child meaningful choices about their play."
+        ],
+        "senior": [
+          "Evaluate whether an experience supports genuine decision-making and recognises the child as a capable learner."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      }
+    ]
+  },
+  {
+    "term": "Whānau partnership",
+    "kind": "specialist",
+    "def": {
+      "junior": "Working respectfully with families to support children’s learning.",
+      "senior": "Reciprocal relationships that recognise whānau expertise, aspirations and contribution to curriculum and assessment decisions."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Invite whānau to share learning they notice at home."
+        ],
+        "senior": [
+          "Show how dialogue changes planning and interpretation rather than treating families only as recipients of information."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      },
+      {
+        "id": "eceassessment",
+        "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
+      }
+    ]
+  },
+  {
+    "term": "Whānau Tangata — family and community",
+    "kind": "specialist",
+    "def": {
+      "junior": "A Te Whāriki principle recognising the importance of family and community.",
+      "senior": "Understanding the child’s learning in relation to whānau, community knowledge, aspirations, relationships and experiences."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Ask whānau about a child’s interests at home."
+        ],
+        "senior": [
+          "Use reciprocal dialogue to connect curriculum decisions with family knowledge and aspirations."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "eceframework",
+        "section": "Te Whāriki, pp. 10–11; principles and strands"
+      }
+    ]
+  },
+  {
+    "term": "Whisking and folding in baking",
+    "kind": "specialist",
+    "def": {
+      "junior": "Incorporating air by whisking and combining mixtures gently by folding.",
+      "senior": "Mixing actions selected to develop foam or combine ingredients while managing aeration, distribution and unwanted structural development."
+    },
+    "examples": {
+      "baking": {
+        "junior": [
+          "Fold flour into a foam using the prescribed method."
+        ],
+        "senior": [
+          "Compare retained aeration and finished texture after different handling approaches."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "bakingcake",
+        "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
+      }
+    ]
+  },
+  {
     "term": "Wireframe, storyboard and information architecture",
     "def": {
       "junior": "Planning representations for screens, sequences and organised content.",
@@ -6736,6 +9096,30 @@
       {
         "id": "media",
         "section": "Project Management, pp. 8–10; Foundations, pp. 11–15; Define and Design, pp. 16–17; Release, pp. 18–20"
+      }
+    ]
+  },
+  {
+    "term": "Working theories",
+    "kind": "specialist",
+    "def": {
+      "junior": "Children’s developing ideas about how their world works.",
+      "senior": "Evolving explanations and understandings that children construct, test and refine through experience, relationships and meaning-making."
+    },
+    "examples": {
+      "ece": {
+        "junior": [
+          "Listen to a child’s explanation of why an object floats."
+        ],
+        "senior": [
+          "Revisit the idea through conversation and investigation, recognising how the child changes their explanation over time."
+        ]
+      }
+    },
+    "refs": [
+      {
+        "id": "ecelearning",
+        "section": "Learning outcomes, dispositions and working theories"
       }
     ]
   },

@@ -346,3 +346,14 @@ summary { cursor:pointer; }
 @media(max-width:600px) { .select-row label { width:100%; } select { width:100%; max-width:100%; } .review-section { padding:1rem; } .top-links { gap:.65rem; } .alpha-row { flex-wrap:wrap; } }
 @media print { .header-controls,.top-links,.reset-btn { display:none; } .site-header { box-shadow:none; } .term-card { break-inside:avoid; box-shadow:none; } .examples-grid { display:block; } .ex-chip { margin-bottom:.5rem; } }
 
+/* Additional staff subject areas */
+.pill-ece.active { background:#28665e; color:white; border-color:#28665e; }
+.pill-baking.active { background:#86521e; color:white; border-color:#86521e; }
+.pill-hospitality.active { background:#8b3f52; color:white; border-color:#8b3f52; }
+.ex-ece { background:#e5f3ef; border-color:#6da99c; color:#173e36; }
+.ex-ece .area { color:#20584e; }
+.ex-baking { background:#fff1dc; border-color:#c99b55; color:#583609; }
+.ex-baking .area { color:#70430d; }
+.ex-hospitality { background:#f9e9ee; border-color:#cb8a9b; color:#5c2536; }
+.ex-hospitality .area { color:#7a3348; }
+

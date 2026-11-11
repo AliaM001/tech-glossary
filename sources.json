@@ -1,17 +1,227 @@
 {
   "reviewed": "2026-11-11",
   "sources": {
-    "nzc": {"label":"NZC 2007+", "title":"NZC 2007 Technology, including the 2017 digital technologies revision", "url":"https://tahurangi.education.govt.nz/the-new-zealand-curriculum---technology/5637209125.p?domain=newzealandcurriculum.tahurangi.education.govt.nz", "curriculum":"nzc", "status":"Existing framework; senior content remains in force during transition."},
-    "p4": {"label":"Phase 4", "title":"Technology Years 9–10: National Curriculum Statement 2026, Schedule 2, pp. 274–280", "url":"https://www.education.govt.nz/our-work/legislation/secondary-legislation/national-curriculum-statement-2026", "curriculum":"p4", "status":"Gazetted Years 0–10 content, commencing 1 January 2027; Years 9–10 implementation during 2027."},
-    "p5overview": {"label":"Phase 5 connection", "title":"Technology Phase 5 proposed teaching content: subject overview", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p", "curriculum":"p5", "status":"October 2026 teaching content for planning; formal status and assessment information pending."},
-    "food": {"label":"Phase 5 · Food", "title":"FoodProcessingTechnology-Years11-13-Oct26.pdf", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads", "curriculum":"p5", "status":"Proposed teaching content; reviewed Ministry-authored October 2026 PDF."},
-    "textiles": {"label":"Phase 5 · Textiles", "title":"TextilesTechnology-Years11-13-Oct26.pdf", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads", "curriculum":"p5", "status":"Proposed teaching content; reviewed Ministry-authored October 2026 PDF."},
-    "rmt": {"label":"Phase 5 · Resistant materials", "title":"ResistantMaterialsTechnology-Years11-13-Oct26.pdf", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads", "curriculum":"p5", "status":"Proposed teaching content; reviewed Ministry-authored October 2026 PDF."},
-    "spd": {"label":"Phase 5 · Spatial/product design", "title":"Spatial&ProductDesign-Years11-13-Oct26.pdf", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads", "curriculum":"p5", "status":"Proposed teaching content; reviewed Ministry-authored October 2026 PDF."},
-    "digital11": {"label":"Phase 5 · Year 11 digital", "title":"DigitalTechnologies-Year11-Oct26.pdf", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads", "curriculum":"p5", "status":"Proposed teaching content; alternative Digital Technologies or Electronics and Mechatronics pathways."},
-    "cs": {"label":"Phase 5 · Computer science", "title":"ComputerScience-Years12-13-Oct26.pdf", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads", "curriculum":"p5", "status":"Proposed teaching content; reviewed Ministry-authored October 2026 PDF."},
-    "media": {"label":"Phase 5 · Digital media", "title":"DigitalMedia-Years12-13-Oct26.pdf", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads", "curriculum":"p5", "status":"Proposed teaching content; reviewed Ministry-authored October 2026 PDF."},
-    "electronics": {"label":"Phase 5 · Electronics/mechatronics", "title":"ElectronicsandMechatronics-Years12-13-Oct26.pdf", "url":"https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads", "curriculum":"p5", "status":"Proposed teaching content; reviewed Ministry-authored October 2026 PDF."}
+    "nzc": {
+      "label": "NZC 2007+",
+      "title": "NZC 2007 Technology, including the 2017 digital technologies revision",
+      "url": "https://tahurangi.education.govt.nz/the-new-zealand-curriculum---technology/5637209125.p?domain=newzealandcurriculum.tahurangi.education.govt.nz",
+      "curriculum": "nzc",
+      "status": "Existing framework; senior content remains in force during transition."
+    },
+    "p4": {
+      "label": "Phase 4",
+      "title": "Technology Years 9–10: National Curriculum Statement 2026, Schedule 2, pp. 274–280",
+      "url": "https://www.education.govt.nz/our-work/legislation/secondary-legislation/national-curriculum-statement-2026",
+      "curriculum": "p4",
+      "status": "Gazetted Years 0–10 content, commencing 1 January 2027; Years 9–10 implementation during 2027."
+    },
+    "p5overview": {
+      "label": "Phase 5 connection",
+      "title": "Technology Phase 5 proposed teaching content: subject overview",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p",
+      "curriculum": "p5",
+      "status": "October 2026 teaching content for planning; formal status and assessment information pending."
+    },
+    "food": {
+      "label": "Phase 5 · Food",
+      "title": "FoodProcessingTechnology-Years11-13-Oct26.pdf",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads",
+      "curriculum": "p5",
+      "status": "Proposed teaching content; reviewed Ministry-authored October 2026 PDF."
+    },
+    "textiles": {
+      "label": "Phase 5 · Textiles",
+      "title": "TextilesTechnology-Years11-13-Oct26.pdf",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads",
+      "curriculum": "p5",
+      "status": "Proposed teaching content; reviewed Ministry-authored October 2026 PDF."
+    },
+    "rmt": {
+      "label": "Phase 5 · Resistant materials",
+      "title": "ResistantMaterialsTechnology-Years11-13-Oct26.pdf",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads",
+      "curriculum": "p5",
+      "status": "Proposed teaching content; reviewed Ministry-authored October 2026 PDF."
+    },
+    "spd": {
+      "label": "Phase 5 · Spatial/product design",
+      "title": "Spatial&ProductDesign-Years11-13-Oct26.pdf",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads",
+      "curriculum": "p5",
+      "status": "Proposed teaching content; reviewed Ministry-authored October 2026 PDF."
+    },
+    "digital11": {
+      "label": "Phase 5 · Year 11 digital",
+      "title": "DigitalTechnologies-Year11-Oct26.pdf",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads",
+      "curriculum": "p5",
+      "status": "Proposed teaching content; alternative Digital Technologies or Electronics and Mechatronics pathways."
+    },
+    "cs": {
+      "label": "Phase 5 · Computer science",
+      "title": "ComputerScience-Years12-13-Oct26.pdf",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads",
+      "curriculum": "p5",
+      "status": "Proposed teaching content; reviewed Ministry-authored October 2026 PDF."
+    },
+    "media": {
+      "label": "Phase 5 · Digital media",
+      "title": "DigitalMedia-Years12-13-Oct26.pdf",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads",
+      "curriculum": "p5",
+      "status": "Proposed teaching content; reviewed Ministry-authored October 2026 PDF."
+    },
+    "electronics": {
+      "label": "Phase 5 · Electronics/mechatronics",
+      "title": "ElectronicsandMechatronics-Years12-13-Oct26.pdf",
+      "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/nzc---technology-phase-5/5637325331.p#File-Downloads",
+      "curriculum": "p5",
+      "status": "Proposed teaching content; reviewed Ministry-authored October 2026 PDF."
+    },
+    "eceframework": {
+      "label": "ECE · Te Whāriki",
+      "title": "Te Whāriki: principles and strands",
+      "url": "https://tewhariki.tahurangi.education.govt.nz/the-wh-riki/5637165868.p",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Te Whāriki, pp. 10–11; principles and strands"
+    },
+    "ecelearning": {
+      "label": "ECE · Learning",
+      "title": "Te Whāriki: strands, goals, learning dispositions and working theories",
+      "url": "https://tewhariki.tahurangi.education.govt.nz/te-whariki-online/taumata-whakahirahira-strands-goals-and-learning-outcomes/5637166612.p",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Learning outcomes, dispositions and working theories"
+    },
+    "eceassessment": {
+      "label": "ECE · Assessment",
+      "title": "Te Whāriki: assessment, planning and evaluation",
+      "url": "https://tewhariki.tahurangi.education.govt.nz/assessment-planning-and-evaluation/5637165598.p",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Te Whāriki, pp. 63–65; assessment, planning and evaluation"
+    },
+    "eceglossary": {
+      "label": "ECE · Terminology",
+      "title": "Te Whāriki: Kuputaka glossary",
+      "url": "https://tewhariki.tahurangi.education.govt.nz/kuputaka-glossary/5637164849.p",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Disciplinary terminology and teaching connections"
+    },
+    "ecetransitions": {
+      "label": "ECE · Transitions",
+      "title": "Te Whāriki: pathways to school and kura",
+      "url": "https://tewhariki.tahurangi.education.govt.nz/te-whariki-online/pathways-to-school-and-kura/5637168625.p",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Continuity and connections across learning pathways"
+    },
+    "bakingbread": {
+      "label": "Baking · Bread",
+      "title": "NZQA 29112 v2: bread baking science and manual processes",
+      "url": "https://www.nzqa.govt.nz/nqfdocs/units/pdf/29112.pdf",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Outcomes 1–2: bread science and production terminology"
+    },
+    "bakingcake": {
+      "label": "Baking · Cakes/biscuits",
+      "title": "NZQA 29117 v2: cake and biscuit science and manual processes",
+      "url": "https://www.nzqa.govt.nz/nqfdocs/units/pdf/29117.pdf",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Outcomes 1–4: ingredient function, aeration, processes and faults"
+    },
+    "bakingpastry": {
+      "label": "Baking · Pastry",
+      "title": "NZQA 29122 v2: pastry science and manual processes",
+      "url": "https://www.nzqa.govt.nz/nqfdocs/units/pdf/29122.pdf",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Outcomes 1–5: pastry science, short pastry, puff pastry, laminated and choux processes"
+    },
+    "bakingmath": {
+      "label": "Baking · Formulae",
+      "title": "King Arthur Baking: professional baker’s percentage reference",
+      "url": "https://www.kingarthurbaking.com/pro/reference/bakers-percentage",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Ingredient percentages, scaling and total formula accounting"
+    },
+    "bakingpreferment": {
+      "label": "Baking · Preferments",
+      "title": "King Arthur Baking: professional preferment reference",
+      "url": "https://www.kingarthurbaking.com/pro/reference/preferment",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Preferments and sourdough cultures"
+    },
+    "hospitalityservice": {
+      "label": "Hospitality · Service",
+      "title": "NZQA 26308 v6: restaurant service",
+      "url": "https://www.nzqa.govt.nz/nqfdocs/units/pdf/26308.pdf",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Outcomes 1–4: orders, beverage/food service and service-area maintenance"
+    },
+    "hospitalitystyles": {
+      "label": "Hospitality · Menus/styles",
+      "title": "NZQA 14431 v7: food service styles and menu types",
+      "url": "https://www.nzqa.govt.nz/nqfdocs/units/pdf/14431.pdf",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Outcomes 1–2: styles, menus and table settings"
+    },
+    "hospitalityplanning": {
+      "label": "Hospitality · Operations",
+      "title": "NZQA 27944 v4: planning and supervising food and beverage service",
+      "url": "https://www.nzqa.govt.nz/nqfdocs/units/pdf/27944.pdf",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Service planning, equipment, stock levels and functions"
+    },
+    "barista": {
+      "label": "Hospitality · Barista",
+      "title": "NZQA 17285 v10: espresso equipment and beverages under supervision",
+      "url": "https://www.nzqa.govt.nz/nqfdocs/units/pdf/17285.pdf",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Outcomes 1–3: equipment, beverages and milk aeration"
+    },
+    "foodsafety": {
+      "label": "Food safety · MPI",
+      "title": "New Zealand Food Safety: key food-safety factors",
+      "url": "https://www.mpi.govt.nz/food-business/food-safety-toolkit/top-5-food-safety-factors",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Training, hygiene, separation, cleaning and time/temperature control"
+    },
+    "foodplan": {
+      "label": "Food plans · MPI",
+      "title": "MPI: template Food Control Plans",
+      "url": "https://www.mpi.govt.nz/food-business/running-a-food-business/food-control-plans/use-a-template-food-control-plan",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Purpose and use of template food-control plans; follow the applicable current plan"
+    },
+    "allergens": {
+      "label": "Allergens · MPI",
+      "title": "MPI: allergen information when dining out",
+      "url": "https://www.mpi.govt.nz/food-safety-home/food-allergies-intolerances/checking-food-allergens-when-dining-out",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Ingredient information, allergen communication and cross-contact"
+    },
+    "cleaning": {
+      "label": "Cleaning · MPI",
+      "title": "MPI My Food Plan: cleaning and sanitising",
+      "url": "https://www.mpi.govt.nz/dmsdocument/71023/direct",
+      "curriculum": "subject",
+      "status": "Subject reference checked 11 November 2026. Editorial vocabulary connection; not a complete assessment checklist.",
+      "section": "Cleaning and sanitising: different purposes and appropriate procedures"
+    }
   }
 }
 
