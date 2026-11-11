@@ -15,12 +15,11 @@ function selectedAreas(){return activeFilter==='all'?AREAS:AREAS.filter(a=>a.key
 function matchingTerms(){
  const q=normalise(document.getElementById('searchInput').value.trim());
  const curriculum=document.getElementById('curriculumSelect').value;
- const kind=document.getElementById('kindSelect').value;
  const areas=selectedAreas();
  return TERMS.filter(t=>{
   const applicable=areas.filter(a=>t.examples[a.key]?.[activeLevel]?.length);
   const content=[t.term,t.def[activeLevel],...applicable.flatMap(a=>t.examples[a.key][activeLevel])].join(' ');
-  return applicable.length && (!q||normalise(content).includes(q)) && (activeAlpha==='all'||t.term[0].toUpperCase()===activeAlpha) && (kind==='all'||kind===t.kind) && (curriculum==='all'||t.refs.some(r=>SOURCES[r.id].curriculum===curriculum));
+  return applicable.length && (!q||normalise(content).includes(q)) && (activeAlpha==='all'||t.term[0].toUpperCase()===activeAlpha) && (curriculum==='all'||t.refs.some(r=>SOURCES[r.id].curriculum===curriculum));
  });
 }
 function render(){
@@ -41,8 +40,7 @@ document.getElementById('filterRow').addEventListener('click',event=>{const b=ev
 document.getElementById('alphaBar').addEventListener('click',event=>{const b=event.target.closest('button[data-letter]');if(!b)return;activeAlpha=b.dataset.letter;updateButtons('#alphaBar','data-letter',activeAlpha);render();});
 document.getElementById('searchInput').addEventListener('input',render);
 document.getElementById('curriculumSelect').addEventListener('change',render);
-document.getElementById('kindSelect').addEventListener('change',render);
-document.getElementById('resetBtn').addEventListener('click',()=>{activeFilter='all';activeAlpha='all';document.getElementById('searchInput').value='';document.getElementById('curriculumSelect').value='all';document.getElementById('kindSelect').value='all';updateButtons('#filterRow','data-area',activeFilter);updateButtons('#alphaBar','data-letter',activeAlpha);render();});
+document.getElementById('resetBtn').addEventListener('click',()=>{activeFilter='all';activeAlpha='all';document.getElementById('searchInput').value='';document.getElementById('curriculumSelect').value='all';updateButtons('#filterRow','data-area',activeFilter);updateButtons('#alphaBar','data-letter',activeAlpha);render();});
 document.getElementById('sourceList').innerHTML='<h3>Reviewed sources</h3><ul>'+Object.values(SOURCES).map(s=>'<li><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+'</a><br><small>'+esc(s.status)+'</small></li>').join('')+'</ul>';
 render();
 
